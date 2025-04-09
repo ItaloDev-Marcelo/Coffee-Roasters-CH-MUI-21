@@ -6,8 +6,10 @@ function App() {
 
 
   return (
-    // <Header/>
+   <>
+    <Header/>
     <OurCollection/>
+    </>
   )
 }
 

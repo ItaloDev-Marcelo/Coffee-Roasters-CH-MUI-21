@@ -29,6 +29,17 @@ br {
   border-radius: 10px;
 }
 
+.coffee-image  {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+
+.coffee-image  > img {
+  max-width: 100%;
+  width: 50%;
+}
+
 
 
 @media (min-width: 800px ) {
@@ -38,6 +49,19 @@ br {
 }
 
 @media (min-width: 1280px) {
+  .coffee-image  > img {
+    max-width: 100%;
+    width: 75%;
+  }
+
+  .Coffee-block {
+    margin: 0 1em;
+  }
+
+  .Coffee-block  {
+    margin: 0 1em;
+  }
+  
   
 }
 
