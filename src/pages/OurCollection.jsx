@@ -7,19 +7,22 @@ export default function OurCollection() {
        justifyContent: {xs: 'center', lg: 'flex-start'},
        alignItems: {xs: 'center', lg: 'flex-start'},
        alignContent: {xs: 'center', lg: 'flex-start'},
-       textAlign: 'center'
-      }} padding={{xs: '1em 2em', lg: '1em 7rem'}}>
+       textAlign: {xs: 'center', md: 'left', lg: 'center'},
+       margin: {lg: '5em 0 2em 0'}
+      }} padding={{xs: '1em 2em', lg: '2.5em 7rem'}}>
          <Stack className='collection-T'></Stack>
          {
            CoffeeList.map((data, index) => {
-              return   <Stack key={index} className='Coffee-block'>
-              <Stack className='coffee-image' margin={{xs: '2em 0', lg: '1em 0'}}>
+              return   <Stack key={index} sx={{display:'flex', 
+              flexDirection: {xs: 'column', md: 'row', lg: 'column'}}} className='Coffee-block' >
+              <Stack className='coffee-image'
+               margin={{xs: ' 1em 0', lg: '0 0 3em 0'}} >
                   <img src={data.Icon} alt={data.Title}/>
               </Stack>
-              <Stack className='info'>
+              <Stack className='info' width={{md: '385px', lg: 'auto'}} padding={{xs: '2em', lg: '1.5em'}}  >
                  <Typography variant='h2' fontSize='1.2em'>{data.Title}</Typography>
                  <Typography variant='p' margin={{xs: '1em 0', lg: '2em 0'}} >{data.Text} </Typography>
-              </Stack>
+              </Stack> 
            </Stack>
            })
          }
