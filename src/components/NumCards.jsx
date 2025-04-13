@@ -3,10 +3,19 @@ import {Stack,  Typography} from '@mui/material';
 
 export default function NumCard({Num, Title, Text, index}) {
    return  (
-      <Stack key={index} component='article'>
-                           <Typography variant='h4'> {Num} </Typography>
-                           <Typography variant='h5'> {Title} </Typography>
-                           <Typography variant='p'> {Text} </Typography>
+      <Stack key={index} component='article' 
+       sx={{display: 'flex', flexDirection: 'column',
+        justifyContent: {xs: 'center', md: 'flex-start'},
+         textAlign: {xs: 'center', md: 'left'}, alignItems: {xs: 'center', md: 'flex-start'},
+         margin: {xs: '1em', md: '.1em 3em'},
+      }}
+      >
+                           <Stack width={{xs: 250, md: 200, lg: 300}}>
+                           <Typography variant='h4'
+                            sx={{fontSize: {xs: '4rem', md: '5rem'}, margin: '1em 0 .5em 0'}}> {Num} </Typography>
+                           <Typography variant='h5'  sx={{fontSize: {xs: '1.7em', md: '2em'}, margin: '0 0 .7em 0'}}> {Title} </Typography>
+                           <Typography variant='p' sx={{ width: {md: 250}}} > {Text} </Typography>
+                           </Stack>
      </Stack>
     )
 

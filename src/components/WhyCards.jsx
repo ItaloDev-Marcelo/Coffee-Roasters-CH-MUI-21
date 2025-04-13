@@ -4,7 +4,7 @@ import WhyChooseList from '../components/WhyChooseList';
 export default function WhyCard() {
 
     return (
-         <Stack component='section' id='card-container'>
+         <Stack component='section' id='card-container' >
                {
                 WhyChooseList.map((item, index) => {
                     return (

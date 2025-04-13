@@ -1,17 +1,11 @@
-import Header from './pages/Header';
-import OurCollection from './pages/OurCollection';
-import WhyChooseUs from './pages/WhyChooseUs';
-import HowItWorks from './pages/HowItWorks';
+import HomePage from './pages/HomePage'
 import './App.css';
 function App() {
 
 
   return (
    <>
-    <Header/>
-    <OurCollection/>
-    <WhyChooseUs/>
-    <HowItWorks/>
+     <HomePage/>
     </>
   )
 }
