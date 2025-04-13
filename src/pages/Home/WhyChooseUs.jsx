@@ -1,7 +1,7 @@
 
 import { Stack, Box } from '@mui/material';
-import WhyChooseHeader from '../components/whyChooseHeader'
-import WhyCard from '../components/WhyCards'
+import WhyChooseHeader from '../../components/whyChooseHeader'
+import WhyCard from '../../components/WhyCards'
 
 export default function WhyChooseUs() {
     return (

@@ -1,5 +1,5 @@
 import {Stack, Typography} from '@mui/material';
-import CoffeeList from '../components/CoffeList';
+import CoffeeList from '../../components/CoffeList';
 
 export default function OurCollection() {
     return (

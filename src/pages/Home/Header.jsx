@@ -1,8 +1,8 @@
 import {Stack, Box} from '@mui/material';
-import CoffeeHero0 from '../assets/images/home/mobile/image-hero-coffeepress.jpg';
-import CoffeeHero1 from '../assets/images/home/tablet/image-hero-coffeepress.jpg';
-import CoffeeHero2 from '../assets/images/home/desktop/image-hero-coffeepress.jpg';
-import HeaderInformation from '../components/headerInformation'
+import CoffeeHero0 from '../../assets/images/home/mobile/image-hero-coffeepress.jpg';
+import CoffeeHero1 from '../../assets/images/home/tablet/image-hero-coffeepress.jpg';
+import CoffeeHero2 from '../../assets/images/home/desktop/image-hero-coffeepress.jpg';
+import HeaderInformation from '../../components/headerInformation'
 export default function Header() {
 
    

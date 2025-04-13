@@ -1,9 +1,9 @@
 
 import {Stack, Box, Typography} from '@mui/material';
-import HowList from '../components/HowList';
-import PlanButton from '../components/PlanBtn';
-import NumCards from '../components/NumCards'
-import Line from '../components/Line';
+import HowList from '../../components/HowList';
+import PlanButton from '../../components/PlanBtn';
+import NumCards from '../../components/NumCards'
+import Line from '../../components/Line';
 export default function HowItWorks() {
     return (
         <Stack component='section' padding='1em 2em'
