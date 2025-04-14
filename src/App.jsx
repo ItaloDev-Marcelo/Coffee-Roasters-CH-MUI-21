@@ -1,17 +1,16 @@
 import HomePage from './pages/Home/HomePage'
+import AboutHomePage from './pages/About/index'
+import Header from './pages/Plan/Header';
 import './App.css';
-import HeaderOfAboutPage from './pages/About/Header';
-import Headquarters from './pages/About/ourHeadquarters'
-import AboutArea from './pages/About/About'
+
 function App() {
 
 
   return (
    <>
      {/* <HomePage/> */}
-     <HeaderOfAboutPage/>
-     <AboutArea/>
-     <Headquarters/>
+     {/* <AboutHomePage /> */}
+     <Header />
     </>
   )
 }
