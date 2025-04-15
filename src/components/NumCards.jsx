@@ -7,10 +7,11 @@ export default function NumCard({Num, Title, Text, index}) {
        sx={{display: 'flex', flexDirection: 'column',
         justifyContent: {xs: 'center', md: 'flex-start'},
          textAlign: {xs: 'center', md: 'left'}, alignItems: {xs: 'center', md: 'flex-start'},
-         margin: {xs: '1em', md: '.1em 3em'},
+         margin: {xs: '1em', md: '.1em 3em', lg: '.1em 1.2em'},
       }}
+      
       >
-                           <Stack width={{xs: 250, md: 200, lg: 300}}>
+                           <Stack className='Num-card' width={{xs: 250, md: 200, lg: 300}}>
                            <Typography variant='h4'
                             sx={{fontSize: {xs: '4rem', md: '5rem'}, margin: '1em 0 .5em 0'}}> {Num} </Typography>
                            <Typography variant='h5'  sx={{fontSize: {xs: '1.7em', md: '2em'}, margin: '0 0 .7em 0'}}> {Title} </Typography>

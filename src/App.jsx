@@ -2,6 +2,7 @@ import HomePage from './pages/Home/HomePage'
 import AboutHomePage from './pages/About/index'
 import Header from './pages/Plan/Header';
 import './App.css';
+import AboutSection from './pages/Plan/About';
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
      {/* <HomePage/> */}
      {/* <AboutHomePage /> */}
      <Header />
+     <AboutSection/>
     </>
   )
 }

@@ -14,7 +14,9 @@ export default function HowItWorks() {
         }}
         textAlign={{xs: 'center', md: 'left'}} >
             <Typography variant='h4' margin={{md: '1em 1.5em'}}>How it works</Typography>
+            
             <Line/>
+           
             <Stack  
             sx={{display: 'flex', flexDirection: {xs: 'column', md: 'row'}, margin: {md: '-2em 0 2em 0'}}}
             >

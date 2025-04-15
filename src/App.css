@@ -178,6 +178,15 @@ ul {
 }
 
 
+#About-S1 {
+  background-image: url(./assets/images/plan/desktop/bg-steps.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  border-radius: 10px;
+}
+
+
 
 @media (min-width: 800px ) {
   br {
@@ -258,6 +267,8 @@ ul {
 }
 
 
+
+
 }
 
 
@@ -281,14 +292,16 @@ ul {
     width: 75%;
   }
 
-  #line-container {
+  .line-container {
     width: 95%;
     height: 25%;
     position: relative;
     margin-left: 3em;
   }
 
-  #line-container::after {
+
+
+  .line-container::after {
     content: '';
     display: flex;
     width: 70%;
@@ -327,7 +340,38 @@ ul {
     z-index: 1000 !important;
   }
   
+
+  #About-S   .line-container {
+    width: 87%;
+    height: 25%;
+    position: relative;
+    margin-left: 3em;
+  }
+
+  #About-S  
+  .line-container::after {
+    content: '';
+    display: flex;
+    width: 67%;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+  }
+
+  #About-S  
+  .circle {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 1px solid #0e8684;
+    z-index: 1;
+  }
   
+
 
 
 
@@ -446,6 +490,25 @@ ul {
   max-width: 100%;
   width: 100%;
 }
+
+
+.Num-card:nth-of-type(1) {
+  margin-left:2em;
+}
+
+.Num-card   {
+  max-width: 290px !important;
+}
+
+
+#About-S   .line-container {
+  width: 92%;
+  height: 25%;
+  position: relative;
+  margin-left: 3em;
+}
+
+
   
 }
 

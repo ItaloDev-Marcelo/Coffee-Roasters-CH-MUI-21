@@ -8,7 +8,7 @@ import Hero2 from '../../assets/images/plan/desktop/image-hero-blackcup.jpg';
 export default function HeaderOfAboutPage() {
 
     return (
-         <Stack component='header' padding={{lg: '0 2em'}}>
+         <Stack component='header' padding={{lg: '0 1em'}}>
             <Box id='banner-container'>
                <Box className='container' position='relative' display={{xs: 'block', sm: 'none'}}>
                  <img src={Hero0}   alt='image-hero-coffeepress' />
