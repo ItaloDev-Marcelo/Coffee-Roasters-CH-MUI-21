@@ -1,4 +1,4 @@
-import Header from './Header';
+import Header from './Header-H';
 import OurCollection from './OurCollection';
 import WhyChooseUs from './WhyChooseUs';
 import HowItWorks from './HowItWorks';

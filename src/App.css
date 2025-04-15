@@ -5,6 +5,8 @@
   font-size: 100%;
 }
 
+
+
 body {
   font-size: 1em;
 }
@@ -20,6 +22,8 @@ br {
 h2 {
   font-weight: bolder !important;
 }
+
+
 
 ul {
   list-style: none;
@@ -183,7 +187,6 @@ ul {
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
-  border-radius: 10px;
 }
 
 
@@ -293,7 +296,7 @@ ul {
   }
 
   .line-container {
-    width: 95%;
+    width: 87%;
     height: 25%;
     position: relative;
     margin-left: 3em;
@@ -304,7 +307,7 @@ ul {
   .line-container::after {
     content: '';
     display: flex;
-    width: 70%;
+    width: 69%;
     height: 2px;
     background-color: pink;
     position: absolute;
@@ -435,8 +438,6 @@ ul {
 
 
 
-
-
 #card-container {
   display: flex;
   flex-direction: row;
@@ -491,6 +492,9 @@ ul {
   width: 100%;
 }
 
+.mini-card {
+  transform: scale(1.2);
+}
 
 .Num-card:nth-of-type(1) {
   margin-left:2em;
@@ -508,6 +512,10 @@ ul {
   margin-left: 3em;
 }
 
+
+#About-S1 {
+  border-radius: 10px;
+}
 
   
 }

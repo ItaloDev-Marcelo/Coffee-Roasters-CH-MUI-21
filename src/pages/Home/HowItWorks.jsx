@@ -6,14 +6,14 @@ import NumCards from '../../components/NumCards'
 import Line from '../../components/Line';
 export default function HowItWorks() {
     return (
-        <Stack component='section' padding='1em 2em'
+        <Stack component='section' padding={{xs: '1em 2em', lg: '1em 4em'}}
         sx={{display: 'flex', flexDirection: 'column',
           justifyContent: {xs: 'center', md: 'flex-start'},
            textAlign: {xs: 'center', md: 'left'}, alignItems: {xs: 'center', md: 'flex-start'},
          
         }}
         textAlign={{xs: 'center', md: 'left'}} >
-            <Typography variant='h4' margin={{md: '1em 1.5em'}}>How it works</Typography>
+            <Typography variant='h4' margin={{md: '1em 1.5em 3em 1.5em'}}>How it works</Typography>
             
             <Line/>
            

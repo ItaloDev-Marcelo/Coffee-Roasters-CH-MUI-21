@@ -1,16 +1,16 @@
-import HomePage from './pages/Home/HomePage'
+import HomePage from './pages/Home'
 import AboutHomePage from './pages/About/index'
-import Header from './pages/Plan/Header';
+import Header from './pages/Plan/Header-P';
 import './App.css';
-import AboutSection from './pages/Plan/About';
+import AboutSection from './pages/Plan/About-P';
 
 function App() {
 
 
   return (
    <>
-     {/* <HomePage/> */}
-     {/* <AboutHomePage /> */}
+     {/* <HomePage/>
+     <AboutHomePage /> */}
      <Header />
      <AboutSection/>
     </>

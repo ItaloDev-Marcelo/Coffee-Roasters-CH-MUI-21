@@ -10,18 +10,19 @@ export default function Headquarters() {
                     textAlign: {xs: 'center', lg: 'left'},
                     alignItems: {xs: 'center', lg: 'flex-start'},
                     alignContent: {xs: 'center', lg: 'flex-start'},
-                    margin: {xs: '1em 0', lg: '1em 2em '},
-                    padding: {xs: '1em 2em', lg: '1em 10em'}
+                    margin: {xs: '1em 0', lg: '1em 3em '},
+                    padding: {xs: '1em 2em', lg: '7em 10em'}
                 }} >
-             <Typography variant='h3' fontSize={{xs: '2em', lg: '2.5em'}} margin='1em 0'>Our headquarters</Typography>
+             <Typography variant='h3' fontSize={{xs: '2em', lg: '2.2em'}}
+              margin={{xs:'1em 0', lg: '2em 0'}}>Our headquarters</Typography>
              <Stack>
               <Stack sx={{display: 'flex',
-        flexDirection: {xs: 'column', md: 'row'}}} width={{lg: '100%'}}>
+        flexDirection: {xs: 'column', lg: 'row'}}} width={{lg: '100%'}}>
 
               {
                    HeadquartersList.map((item, index) => {
                      return  (
-                      <Stack key={index}  
+                      <Stack key={index}  className='mini-card'
                        width={{xs: 270, sm: 400, lg: 300}} margin={{xs: '1.3em 0'}}>
                       <Stack sx={{alignSelf: {xs: 'center', lg: 'flex-start'}}}>
                       <img src={item.Icon}  className='mini-icon' alt=''/>
