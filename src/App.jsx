@@ -3,6 +3,7 @@ import AboutHomePage from './pages/About/index'
 import Header from './pages/Plan/Header-P';
 import './App.css';
 import AboutSection from './pages/Plan/About-P';
+import AccordionSection from './pages/Plan/AccordionSection';
 
 function App() {
 
@@ -11,8 +12,9 @@ function App() {
    <>
      {/* <HomePage/>
      <AboutHomePage /> */}
-     <Header />
-     <AboutSection/>
+     {/* <Header />
+     <AboutSection/> */}
+     <AccordionSection/>
     </>
   )
 }
