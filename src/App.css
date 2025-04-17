@@ -191,12 +191,25 @@ ul {
 
 .accordionCard {
   margin: 1em 0;
+  width: 300px;
   height: 150px;
   align-content: center;
+  cursor: pointer;
+}
+
+.accordionCard:hover {
+
+  background-color: rgba(253, 214, 186, 0.77);
+  color: #fff;
 }
 
 .accordionCard h5 {
   padding: 1em 0;
+}
+
+.accordionCard.active {
+  background-color: #0e8684;
+  color: #fff;
 }
 
 
@@ -536,7 +549,7 @@ ul {
 }
 
 .accordionCard div {
-  padding: 2em 10em 2em 2em;
+  padding: 2em ;
 }
 
   

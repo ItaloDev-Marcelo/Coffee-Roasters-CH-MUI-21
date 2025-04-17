@@ -43,7 +43,9 @@ export default function AccordionSection() {
                  sx={{display: 'flex', flexDirection: {xs: 'column', lg: 'row'}, 
                  justifyContent: {xs: 'center', lg: 'space-around'}, textAlign: 'left'   }}>
 
-                    <Card className='accordionCard'onClick={ () => SelectOption1('option1', ' Capsule ') }>
+                    <Card
+                     className={selectTypes.option1 === ' Capsule ' ?  'accordionCard active' : 
+                     'accordionCard'}  onClick={ () => SelectOption1('option1', ' Capsule ') }>
                         <CardContent>
                             <Typography variant='h5'>Capsule</Typography>
                             <Typography variant='p'>Compatible with Nespresso systems and similar brewers</Typography>
@@ -52,7 +54,8 @@ export default function AccordionSection() {
                     </Card>
 
 
-                    <Card className='accordionCard'onClick={ () => SelectOption1('option1',' Filter ') }>
+                    <Card className={selectTypes.option1  === ' Filter ' ?  'accordionCard active' : 
+                     'accordionCard'}   onClick={ () => SelectOption1('option1',' Filter ') }>
                         <CardContent>
                             <Typography variant='h5'>Filter</Typography>
                             <Typography variant='p'>For pour over or drip methods like Aeropress, Chemex, and V60</Typography>
@@ -60,7 +63,8 @@ export default function AccordionSection() {
                     </Card>
 
 
-                    <Card className='accordionCard'onClick={ () => SelectOption1('option1',' Expresso ') }>
+                    <Card className={selectTypes.option1  === ' Expresso ' ?  'accordionCard active' : 
+                     'accordionCard'}   onClick={ () => SelectOption1('option1',' Expresso ') }>
                         <CardContent>
                             <Typography variant='h5'>Expresso</Typography>
                             <Typography variant='p'>Dense and finely ground benas for an intense, flavorful experience</Typography>
@@ -80,21 +84,24 @@ export default function AccordionSection() {
                 flexDirection: {xs: 'column', lg: 'row'},
                  justifyContent: {xs: 'center', lg: 'space-around'},
                  textAlign: 'left' }}>
-                <Card className='accordionCard'onClick={ () => SelectOption1('option2',' Single Origin ') }>
+                <Card className={selectTypes.option2  === ' Single Origin  ' ?  'accordionCard active' : 
+                     'accordionCard'}   onClick={ () => SelectOption1('option2',' Single Origin ') }>
                     <CardContent>
                           <Typography variant='h5'>Single Origin</Typography>
                           <Typography variant='p'>Distinct,high quality coffee from a specific family-owned farm</Typography>
                     </CardContent>
                 </Card>
 
-                <Card className='accordionCard'onClick={ () => SelectOption1('option2',' Decaf ') }>
+                <Card className={selectTypes.option2  === ' Decaf ' ?  'accordionCard active' : 
+                     'accordionCard'} onClick={ () => SelectOption1('option2',' Decaf ') }>
                     <CardContent>
                           <Typography variant='h5'>Decaf</Typography>
                           <Typography variant='p'>Just like regular coffee, except the caffeine has been removed</Typography>
                     </CardContent>
                 </Card>
 
-                <Card className='accordionCard'onClick={ () => SelectOption1('option2',' Blended ') }>
+                <Card className={selectTypes.option2  === ' Blended ' ?  'accordionCard active' : 
+                     'accordionCard'} onClick={ () => SelectOption1('option2',' Blended ') }>
                     <CardContent>
                           <Typography variant='h5'>Blended</Typography>
                           <Typography variant='p'>Combination of two or three dark roasted beans of organic coffees</Typography>
@@ -111,21 +118,24 @@ export default function AccordionSection() {
                      flexDirection: {xs: 'column', lg: 'row'},
                       justifyContent: {xs: 'center', lg: 'space-around'}, 
                       textAlign: 'left' }}>
-                <Card className='accordionCard'onClick={ () => SelectOption1('option3',' 250g ') }>
+                <Card className={selectTypes.option3  === ' 250g ' ?  'accordionCard active' : 
+                     'accordionCard'} onClick={ () => SelectOption1('option3',' 250g ') }>
                     <CardContent>
                           <Typography variant='h5'>250g</Typography>
                           <Typography variant='p'>Perfect for the solo drinker. Yields about 12 delicious cups.</Typography>
                     </CardContent>
                 </Card>
 
-                <Card className='accordionCard'onClick={ () => SelectOption1('option3',' 500g ') }>
+                <Card className={selectTypes.option3  === ' 500g ' ?  'accordionCard active' : 
+                     'accordionCard'} onClick={ () => SelectOption1('option3',' 500g ') }>
                     <CardContent>
                           <Typography variant='h5'>500g</Typography>
                           <Typography variant='p'>Perfect option for a couple. Yields abouut 40 delectable cups.</Typography>
                     </CardContent>
                 </Card>
 
-                <Card className='accordionCard'onClick={ () => SelectOption1('option3',' 1000g ') }>
+                <Card className={selectTypes.option3  === ' 1000g ' ?  'accordionCard active' : 
+                     'accordionCard'} onClick={ () => SelectOption1('option3',' 1000g ') }>
                     <CardContent>
                           <Typography variant='h5'>1000g</Typography>
                           <Typography variant='p'>Perfect for offices and events. Yields about 90 delightfull cups. </Typography>
@@ -142,21 +152,24 @@ export default function AccordionSection() {
                  <AccordionDetails  sx={{display: 'flex', 
                     flexDirection: {xs: 'column', lg: 'row'}, justifyContent:
                      {xs: 'center', lg: 'space-around'}, textAlign: 'left' }}>
-                <Card className='accordionCard' onClick={ () => SelectOption1('option4',' Wholebean ') }>
+                <Card className={selectTypes.option4  === ' Wholebean ' ?  'accordionCard active' : 
+                     'accordionCard'}  onClick={ () => SelectOption1('option4',' Wholebean ') }>
                     <CardContent>
                           <Typography variant='h5'>Wholebean</Typography>
                           <Typography variant='p'>Best choice if you chersih the full sensory experience</Typography>
                     </CardContent>
                 </Card>
 
-                <Card className='accordionCard'onClick={ () => SelectOption1('option4',' Filter ') }>
+                <Card className={selectTypes.option4  === ' Filter ' ?  'accordionCard active' : 
+                     'accordionCard'} onClick={ () => SelectOption1('option4',' Filter ') }>
                     <CardContent> 
                           <Typography variant='h5'>Filter</Typography>
                           <Typography variant='p'>For drip or pour-over coffee methods such as V60 or Aeropress</Typography>
                     </CardContent>
                 </Card>
 
-                <Card className='accordionCard'onClick={ () => SelectOption1('option4',' Cafetiére ') }>
+                <Card className={selectTypes.option4  === ' Cafetiére ' ?  'accordionCard active' : 
+                     'accordionCard'} onClick={ () => SelectOption1('option4',' Cafetiére ') }>
                     <CardContent>
                           <Typography variant='h5'>Cafetiére</Typography>
                           <Typography variant='p'>Course ground beans specially suited for french press coffee</Typography>
@@ -175,21 +188,25 @@ export default function AccordionSection() {
                     flexDirection: {xs: 'column', lg: 'row'}, 
                     justifyContent: {xs: 'center', lg: 'space-around'}, 
                     textAlign: 'left' }}>
-                <Card className='accordionCard'onClick={ () => SelectOption1('option5',' Every week ') }>
+                <Card className={selectTypes.option5  === ' Every week ' ?  'accordionCard active' : 
+                     'accordionCard'} onClick={ () => SelectOption1('option5',' Every week ') }>
                     <CardContent>
                           <Typography variant='h5'>Every week</Typography>
                           <Typography variant='p'>$7.2 per shipment. Includes free First-class shipping.</Typography>
                     </CardContent>
                 </Card>
 
-                <Card className='accordionCard'onClick={ () => SelectOption1('option5',' Every 2 weeks ') }>
+                <Card className={selectTypes.option5  === ' Every 2 weeks ' ?  'accordionCard active' : 
+                     'accordionCard'}
+                onClick={ () => SelectOption1('option5',' Every 2 weeks ') }>
                     <CardContent>
                           <Typography variant='h5'>Every 2 weeks</Typography>
                           <Typography variant='p'>$9.60 per shipment. Includes free priority shipping</Typography>
                     </CardContent>
                 </Card>
 
-                <Card className='accordionCard'onClick={ () => SelectOption1('option5',' Every Month ') }>
+                <Card className={selectTypes.option5  === ' Every Month ' ?  'accordionCard active' : 
+                     'accordionCard'} onClick={ () => SelectOption1('option5',' Every Month ') }>
                     <CardContent>
                           <Typography variant='h5'>Every Month</Typography>
                           <Typography variant='p'>$12.00 per shipment. Includes free prioruty shipping.</Typography>
