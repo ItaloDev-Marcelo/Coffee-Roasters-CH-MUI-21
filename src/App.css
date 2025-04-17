@@ -189,6 +189,16 @@ ul {
   color: #fff;
 }
 
+.accordionCard {
+  margin: 1em 0;
+  height: 150px;
+  align-content: center;
+}
+
+.accordionCard h5 {
+  padding: 1em 0;
+}
+
 
 
 @media (min-width: 800px ) {
@@ -515,6 +525,18 @@ ul {
 
 #About-S1 {
   border-radius: 10px;
+}
+
+
+.accordionCard {
+  margin: 1em .5em;
+  height: 250px;
+  
+  align-content: flex-start;
+}
+
+.accordionCard div {
+  padding: 2em 10em 2em 2em;
 }
 
   
