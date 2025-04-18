@@ -23,7 +23,10 @@ h2 {
   font-weight: bolder !important;
 }
 
-
+button:disabled {
+  color: #fff !important;
+  background-color: grey;
+}
 
 ul {
   list-style: none;
