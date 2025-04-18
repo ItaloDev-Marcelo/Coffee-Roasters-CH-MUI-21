@@ -53,7 +53,7 @@ export default function AccordionSection() {
 
 
     const hundleToggle = () => {
-        setOpen(false)
+        setOpen(!open)
         setSelectTypes({
             option1: ' _____  ',
             option2: ' _____ ',
@@ -273,7 +273,7 @@ export default function AccordionSection() {
                     sx={{ width: { xs: 150, lg: 200 }, backgroundColor: '#0e8684', color: '#fff', height: '45px' }}
                     disabled={activeDialog} onClick={ActiveDialogSection} >Create your Plan</Button>
             </Stack>
-            <Dialog open={open} onClose={!open}><DialogTitle >Order Summary</DialogTitle>
+            <Dialog open={open} onClose={!open} padding='1.5em'><DialogTitle >Order Summary</DialogTitle>
                 <Divider />
                 <DialogContent>
                     <DialogContentText>
