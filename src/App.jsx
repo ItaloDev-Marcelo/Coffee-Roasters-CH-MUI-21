@@ -1,20 +1,21 @@
-import HomePage from './pages/Home'
-import AboutHomePage from './pages/About/index'
-import Header from './pages/Plan/Header-P';
+import HomePage from './pages/Home';
+import AboutHomePage from './pages/About/index';
+import PlanSection from './pages/Plan/index'
 import './App.css';
-import AboutSection from './pages/Plan/About-P';
-import AccordionSection from './pages/Plan/AccordionSection';
+import { Navigate, Route, Routes } from 'react-router-dom'
 
 function App() {
 
 
   return (
    <>
-     {/* <HomePage/>
-     <AboutHomePage /> */}
-     {/* <Header />
-     <AboutSection/> */}
-     <AccordionSection/>
+     
+     <Routes>
+        <Route  path="/" element={<Navigate to="/Home" /> }></Route>
+        <Route  path="/Home" element={<HomePage/> }></Route>
+        <Route  path="/About-us" element={<AboutHomePage /> }></Route>
+        <Route  path="/Plan" element={<PlanSection /> }></Route>
+     </Routes>
     </>
   )
 }

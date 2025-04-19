@@ -12,6 +12,9 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 export default function AccordionSection() {
 
+    const [price, setPrice] = useState(0)
+    const [open, setOpen] = useState(false);
+    const [activeDialog, setActiveDialog] = useState(true);
     const [selectTypes, setSelectTypes] = useState({
         option1: ' _____  ',
         option2: ' _____ ',
@@ -20,18 +23,6 @@ export default function AccordionSection() {
         option5: ' ___-_ '
     })
 
-    const [price, setPrice] = useState(0)
-    const [open, setOpen] = useState(false);
-    const [activeDialog, setActiveDialog] = useState(true);
-
-    useEffect(() => {
-        if (selectTypes.option5 !== ' ___-_ ') {
-            setActiveDialog(!activeDialog)
-        } else {
-            setActiveDialog(!activeDialog)
-        }
-
-    }, [selectTypes.option5])
 
     const SelectOption1 = (type, value) => {
         setSelectTypes(prev => (
@@ -51,17 +42,19 @@ export default function AccordionSection() {
         setOpen(!open)
     }
 
-
     const hundleToggle = () => {
         setOpen(!open)
-        setSelectTypes({
-            option1: ' _____  ',
-            option2: ' _____ ',
-            option3: ' _____ ',
-            option4: ' _____ ',
-            option5: ' ___-_ '
-        })
     }
+    
+
+    useEffect(() => {
+        if (selectTypes.option5 !== ' ___-_ ') {
+            setActiveDialog(!activeDialog)
+        } 
+
+    }, [selectTypes.option5])
+
+  
 
 
 
