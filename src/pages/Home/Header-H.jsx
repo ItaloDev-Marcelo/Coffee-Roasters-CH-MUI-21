@@ -3,7 +3,22 @@ import CoffeeHero0 from '../../assets/images/home/mobile/image-hero-coffeepress.
 import CoffeeHero1 from '../../assets/images/home/tablet/image-hero-coffeepress.jpg';
 import CoffeeHero2 from '../../assets/images/home/desktop/image-hero-coffeepress.jpg';
 import HeaderInformation from '../../components/headerInformation'
+import { useEffect } from "react";
+import ScrollReveal from "scrollreveal";
 export default function Header() {
+
+
+  useEffect(() => {
+    ScrollReveal().reveal(".from-left", {
+      distance: "100px",
+      origin: "left",
+      duration: 1200,
+    });
+
+  }, [])
+
+ 
+
 
    
     return (
@@ -11,21 +26,21 @@ export default function Header() {
             <Box id='banner-container'>
                <Box className='container' position='relative' display={{xs: 'block', sm: 'none'}}>
                  <img src={CoffeeHero0}  alt='image-hero-coffeepress' />
-                 <Stack position='absolute' top='7%' left='5%'>
+                 <Stack className='from-left' position='absolute' top='7%' left='5%'>
                  <HeaderInformation/>
                  </Stack>
                </Box>
 
                <Box className='container'  position='relative' display={{xs:'none', sm: 'block', lg: 'none'}}>
                  <img src={CoffeeHero1}  alt='image-hero-coffeepress' />
-                 <Stack position='absolute' top='15%' left='7%'>
+                 <Stack className='from-left' position='absolute' top='15%' left='7%'>
                  <HeaderInformation/>
                  </Stack>
                </Box>
 
                <Box className='container' position='relative' display={{xs:'none', sm: 'none', lg: 'block'}}>
                  <img  src={CoffeeHero2}  alt='image-hero-coffeepress' />
-                 <Stack position='absolute' top='5%' left='5%'>
+                 <Stack className='from-left' position='absolute' top='5%' left='5%'>
                  <HeaderInformation/>
                  </Stack>
                </Box>

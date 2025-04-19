@@ -1,7 +1,20 @@
 import {Stack, Typography} from '@mui/material';
 import CoffeeList from '../../components/CoffeList';
+import { useEffect } from "react";
+import ScrollReveal from "scrollreveal";
 
 export default function OurCollection() {
+
+     useEffect(() => {
+       ScrollReveal().reveal(".from-top", {
+         distance: "10px",
+         origin: "top",
+         duration: 1000,
+       });
+   
+     }, [])
+   
+
     return (
       <Stack component='section' position='relative' sx={{display:'flex', flexDirection: {xs:'column', lg: 'row'},
        justifyContent: {xs: 'center', lg: 'flex-start'},
@@ -10,11 +23,11 @@ export default function OurCollection() {
        textAlign: {xs: 'center', md: 'left', lg: 'center'},
        margin: {lg: '5em 0 2em 0'}
       }} padding={{xs: '1em 2em', lg: '2.5em 7rem'}}>
-         <Stack className='collection-T'></Stack>
+         <Stack className='collection-T '></Stack>
          {
            CoffeeList.map((data, index) => {
               return   <Stack key={index} sx={{display:'flex', 
-              flexDirection: {xs: 'column', md: 'row', lg: 'column'}}} className='Coffee-block' >
+              flexDirection: {xs: 'column', md: 'row', lg: 'column'}}} className='Coffee-block from-top' >
               <Stack className='coffee-image'
                margin={{xs: ' 1em 0', lg: '0 0 3em 0'}} >
                   <img src={data.Icon} alt={data.Title}/>
