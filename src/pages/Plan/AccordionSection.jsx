@@ -20,9 +20,9 @@ export default function AccordionSection() {
         option5: ' ___-_ '
     })
 
-    const [price, setPrice] = useState('')
+    const [price, setPrice] = useState(0)
     const [open, setOpen] = useState(false);
-    const [activeDialog, setActiveDialog] = useState(false);
+    const [activeDialog, setActiveDialog] = useState(true);
 
     useEffect(() => {
         if (selectTypes.option5 !== ' ___-_ ') {
@@ -62,6 +62,7 @@ export default function AccordionSection() {
             option5: ' ___-_ '
         })
     }
+
 
 
 
@@ -269,9 +270,17 @@ export default function AccordionSection() {
                         ground ala  {selectTypes.option4}  , sent to me {selectTypes.option5} .”
                     </Typography>
                 </Stack>
-                <Button
+
+                {
+                    activeDialog  ?  <Button
                     sx={{ width: { xs: 150, lg: 200 }, backgroundColor: '#0e8684', color: '#fff', height: '45px' }}
-                    disabled={activeDialog} onClick={ActiveDialogSection} >Create your Plan</Button>
+                     onClick={ActiveDialogSection} >Create your Plan</Button>
+                    :  <Button
+                    sx={{ width: { xs: 150, lg: 200 }, backgroundColor: '#0e8684', color: '#fff', height: '45px' }}
+                    disabled onClick={ActiveDialogSection} >Create your Plan</Button>
+                }
+               
+
             </Stack>
             <Dialog open={open} onClose={!open} padding='1.5em'><DialogTitle >Order Summary</DialogTitle>
                 <Divider />
@@ -283,14 +292,13 @@ export default function AccordionSection() {
                         <Stack sx={{display :'flex' , flexDirection: {xs: 'column', lg: 'row'},
                          justifyContent: {xs: 'center', lg: 'space-between'}, marginTop: '1em'}}>
 
-                            <Typography variant='h6' display={{xs: 'none', lg: 'block'}} > <strong>$ {price.toFixed(2)} /mo</strong> </Typography>
+                            <Typography variant='h6' display={{xs: 'none', lg: 'block'}} > <strong>$ {price.toFixed(2)} / mo</strong> </Typography>
                             
                              <Button onClick={hundleToggle} sx={{ width: { xs: 150, lg: 200 }, display: {xs: 'block', lg: 'none'},
-                                backgroundColor: '#0e8684', color: '#fff', height: '45px' }}> $ {price.toFixed(2)} //mo </Button>
+                                backgroundColor: '#0e8684', color: '#fff', height: '45px' }}> $ {price.toFixed(2)}  / mo </Button>
                                 
                                 <Button onClick={hundleToggle} sx={{ width: { xs: 150, lg: 200 }, display: {xs: 'none', lg: 'block'},
                              backgroundColor: '#0e8684', color: '#fff', height: '45px' }}> Checkout </Button>
-                            
                         </Stack>
                     </DialogContentText>
                 </DialogContent>
