@@ -18,14 +18,14 @@ export default function WhyCard() {
                     <Stack>
                         <img src={logo} width='200px' alt='logo' />
                     </Stack>
-                    <Stack className='hamburger-menu' onClick={() => setMenu(!menu)} display={{ xs: 'block', md: 'none' }} >
+                    <Stack className='hamburger-menu' onClick={() => setMenu(!menu)} display={{ xs: 'block', lg: 'none' }} >
                         <img src={open} alt='open' />
                     </Stack>
 
 
                 <Stack  >
                 <nav className={menu ? ' menu active' : 'menu'}>
-                 <Stack display={{ xs: 'block', md: 'none' }} onClick={() => setMenu(!menu)} >
+                 <Stack display={{ xs: 'block', lg: 'none' }} onClick={() => setMenu(!menu)} >
                         <img src={close} alt='close' />
                     </Stack>
                     <ul>

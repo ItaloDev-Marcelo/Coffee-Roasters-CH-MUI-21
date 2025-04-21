@@ -14,7 +14,7 @@ export default function AccordionSection() {
 
     const [price, setPrice] = useState(0)
     const [open, setOpen] = useState(false);
-    const [activeDialog, setActiveDialog] = useState(true);
+    const [activeDialog, setActiveDialog] = useState(false);
     const [selectTypes, setSelectTypes] = useState({
         option1: ' _____  ',
         option2: ' _____ ',
@@ -38,7 +38,7 @@ export default function AccordionSection() {
     }
 
     const ActiveDialogSection = () => {
-        setActiveDialog(!activeDialog)
+        setActiveDialog(true)
         setOpen(!open)
     }
 
@@ -63,9 +63,77 @@ export default function AccordionSection() {
 
     return (
         <>
-            <Stack>
+            <Stack padding={{xs: '3em 1.5em', lg: '2em  7em'}} sx={{display: 'flex', flexDirection: { xs: 'column', lg: 'row' },
+             justifyContent: 'space-between'}}>
+                <Stack mt='2em' display={{xs: 'none', lg: 'block'}}>
+                <Accordion  disableGutters
+        elevation={0}
+        square
+        sx={{
+          border: 'none',
+          '&:before': {
+            display: 'none',
+          },
+        }}>
+                    <AccordionSummary>01 Preferences </AccordionSummary>
+                </Accordion>
+                <Accordion  disableGutters
+        elevation={0}
+        square
+        sx={{
+          border: 'none',
+          '&:before': {
+            display: 'none',
+          },
+        }}>
+                    <AccordionSummary>02 Bean Type </AccordionSummary>
+                </Accordion>
+                <Accordion  disableGutters
+        elevation={0}
+        square
+        sx={{
+          border: 'none',
+          '&:before': {
+            display: 'none',
+          },
+        }}>
+                    <AccordionSummary>03 Quantity </AccordionSummary>
+                </Accordion>
+                <Accordion  disableGutters
+        elevation={0}
+        square
+        sx={{
+          border: 'none',
+          '&:before': {
+            display: 'none',
+          },
+        }}>
+                    <AccordionSummary>04 Grind Option </AccordionSummary>
+                </Accordion>
+                <Accordion  disableGutters
+        elevation={0}
+        square
+        sx={{
+          border: 'none',
+          '&:before': {
+            display: 'none',
+          },
+        }}>
+                    <AccordionSummary>05 Deliveries </AccordionSummary>
+                </Accordion>
+                </Stack>
+                
+                <Stack id='accordion-container'  >
                 <div>
-                    <Accordion>
+                    <Accordion   disableGutters
+        elevation={0}
+        square
+        sx={{
+          border: 'none',
+          '&:before': {
+            display: 'none',
+          },
+        }} className='accordion-container'>
                         <AccordionSummary expandIcon={<ExpandMoreIcon />} arial-controls='panel1-content'  >
                             <Typography>How do you drink you coffee?</Typography>
                         </AccordionSummary>
@@ -75,8 +143,7 @@ export default function AccordionSection() {
                                 justifyContent: { xs: 'center', lg: 'space-around' }, textAlign: 'left'
                             }}>
 
-                            <Card
-                                className={selectTypes.option1 === ' Capsule ' ? 'accordionCard active' :
+                            <Card className={selectTypes.option1 === ' Capsule ' ? 'accordionCard active' :
                                     'accordionCard'} onClick={() => SelectOption1('option1', ' Capsule ')}>
                                 <CardContent>
                                     <Typography variant='h5'>Capsule</Typography>
@@ -107,7 +174,15 @@ export default function AccordionSection() {
                     </Accordion>
 
 
-                    <Accordion>
+                    <Accordion   disableGutters
+        elevation={0}
+        square
+        sx={{
+          border: 'none',
+          '&:before': {
+            display: 'none',
+          },
+        }} className='accordion-container'>
                         <AccordionSummary expandIcon={<ExpandMoreIcon />} arial-controls='panel2-content'  >
                             <Typography>What type of coffee?</Typography>
                         </AccordionSummary>
@@ -144,7 +219,15 @@ export default function AccordionSection() {
                         </AccordionDetails>
                     </Accordion>
 
-                    <Accordion>
+                    <Accordion   disableGutters
+        elevation={0}
+        square
+        sx={{
+          border: 'none',
+          '&:before': {
+            display: 'none',
+          },
+        }} className='accordion-container'>
                         <AccordionSummary expandIcon={<ExpandMoreIcon />} arial-controls='panel3-content'  >
                             <Typography>How much would you like ?</Typography>
                         </AccordionSummary>
@@ -180,7 +263,15 @@ export default function AccordionSection() {
                         </AccordionDetails>
                     </Accordion>
 
-                    <Accordion>
+                    <Accordion   disableGutters
+        elevation={0}
+        square
+        sx={{
+          border: 'none',
+          '&:before': {
+            display: 'none',
+          },
+        }} className='accordion-container'>
                         <AccordionSummary expandIcon={<ExpandMoreIcon />} arial-controls='panel4-content'  >
                             <Typography>Want us to grind them?</Typography>
                         </AccordionSummary>
@@ -218,7 +309,15 @@ export default function AccordionSection() {
                     </Accordion>
 
 
-                    <Accordion>
+                    <Accordion   disableGutters
+        elevation={0}
+        square
+        sx={{
+          border: 'none',
+          '&:before': {
+            display: 'none',
+          },
+        }} className='accordion-container'>
                         <AccordionSummary expandIcon={<ExpandMoreIcon />} arial-controls='panel5-content'  >
                             <Typography>How often should we deliver</Typography>
                         </AccordionSummary>
@@ -256,14 +355,15 @@ export default function AccordionSection() {
                     </Accordion>
 
                 </div>
-                <Stack component='article'>
-                    <Typography variant='h5'>Order summary</Typography>
-                    <Typography variant='p'>
-                        “I drink my coffee as  {selectTypes.option1} , with a   {selectTypes.option2}  type of bean. {selectTypes.option3}
-                        ground ala  {selectTypes.option4}  , sent to me {selectTypes.option5} .”
+
+                <Stack component='article' id='Order-summary' margin={{xs: '2em 0 3em 0', lg: '0 0 1em 0'}}>
+                    <Typography variant='h5' margin='.5em 0 .5em 0'>Order summary</Typography>
+                    <Typography variant='p' mb={2}>
+                        “I drink my coffee as  <strong>{selectTypes.option1}</strong> , with a
+                          <strong>{selectTypes.option2} </strong>  type of bean.  <strong>{selectTypes.option3}</strong> 
+                        ground ala <strong>{selectTypes.option4}</strong>    , sent to me <strong>{selectTypes.option5}</strong>   .”
                     </Typography>
                 </Stack>
-
                 {
                     activeDialog  ?  <Button
                     sx={{ width: { xs: 150, lg: 200 }, backgroundColor: '#0e8684', color: '#fff', height: '45px' }}
@@ -272,9 +372,11 @@ export default function AccordionSection() {
                     sx={{ width: { xs: 150, lg: 200 }, backgroundColor: '#0e8684', color: '#fff', height: '45px' }}
                     disabled onClick={ActiveDialogSection} >Create your Plan</Button>
                 }
-               
+                </Stack>
+                
+              </Stack>
 
-            </Stack>
+
             <Dialog open={open} onClose={!open} padding='1.5em'><DialogTitle >Order Summary</DialogTitle>
                 <Divider />
                 <DialogContent>
@@ -296,8 +398,6 @@ export default function AccordionSection() {
                     </DialogContentText>
                 </DialogContent>
             </Dialog>
-
-
         </>
 
     )
