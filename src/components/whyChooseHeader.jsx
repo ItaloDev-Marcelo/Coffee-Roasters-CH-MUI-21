@@ -2,7 +2,7 @@ import { Stack, Typography } from '@mui/material';
 
 const  WhyChooseHeader = () => {
    return  (
-       <Stack component='section' id='WhyChooseUs-content'
+       <Stack component='section' padding='.2em 0' id='WhyChooseUs-content'
        >
        <Stack >
        <Typography variant='h2'  className='WhyChooseUs-txt' fontSize={{xs: '1.2em', lg: '1.5em'}} >Why choose us?</Typography>
