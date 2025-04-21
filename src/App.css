@@ -36,9 +36,11 @@ li {
   cursor: pointer;
 }
 
+/* navegation-tab */
+
 .menu {
   display: none;
-    position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -49,25 +51,47 @@ li {
 
 .menu.active {
   display: block;
+ background-color: whitesmoke;
+}
 
- background-color: rebeccapurple;
+.hamburger-menu img{
+   position: absolute;
+   right: 2em;
 }
 
 
-
-
-ul {
+  ul {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   margin-top: 25%;
 }
+
 ul li {
   margin: 1em 0;
 }
 
+li{
+  position: relative;
+}
 
+li:hover {
+  color: #0e8684;
+}
+
+ul li:hover:after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+
+  background-color: #0e8684;
+
+}
 /*header*/
 
 #banner-container{
@@ -448,36 +472,8 @@ ul li {
   }
 
 
-  ul {
-    display: flex;
-    flex-direction: row;
-  }
 
-  ul li {
-    margin: 0 1em;
-    margin-top: 25%;
-  }
-
-
-  
-nav {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: auto;
-  height:auto;
-  z-index: 1000;
-  padding:  0;
- background: transparent;
-}
-
-ul {
-
-  margin-top: 3%;
-}
-ul li {
-  margin: 0 1em;
-}
+ 
   .coffee-image  {
     display: flex;
     flex-direction: row;
@@ -619,6 +615,38 @@ ul li {
 
 .accordionCard div {
   padding: 2em ;
+
+}
+
+.navegation-tab {
+  padding-top: 2em;
+}
+
+
+.menu, .menu.active {
+  display: flex;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  z-index: 10;
+  padding:  0;
+  background-color: transparent;
+}
+
+
+
+  ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0;
+}
+
+ul li {
+  margin:  0 1em;
 }
 
   

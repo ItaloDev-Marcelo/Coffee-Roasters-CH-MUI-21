@@ -13,16 +13,19 @@ export default function WhyCard() {
    
 
     return (
-         <Stack component='header' padding='2em'  sx={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between'}} >
+         <Stack component='header' className='navegation-tab' padding={{xs: '2em' , md: '1em 2em', lg: '1.5em 3em'}}
+          sx={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center'}} >
                     <Stack>
                         <img src={logo} width='200px' alt='logo' />
                     </Stack>
-                    <Stack display={{ xs: 'block', md: 'none' }} >
+                    <Stack className='hamburger-menu' onClick={() => setMenu(!menu)} display={{ xs: 'block', md: 'none' }} >
                         <img src={open} alt='open' />
                     </Stack>
-                <Stack onClick={() => setMenu(!menu)} className={menu ? ' menu active' : 'menu'}>
-                <nav>
-                 <Stack display={{ xs: 'block', md: 'none' }} >
+
+
+                <Stack  >
+                <nav className={menu ? ' menu active' : 'menu'}>
+                 <Stack display={{ xs: 'block', md: 'none' }} onClick={() => setMenu(!menu)} >
                         <img src={close} alt='close' />
                     </Stack>
                     <ul>
