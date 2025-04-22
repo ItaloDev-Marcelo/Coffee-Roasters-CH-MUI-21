@@ -4,8 +4,21 @@ import {Stack, Box, Typography} from '@mui/material';
 import Hero0 from '../../assets/images/about/mobile/image-hero-whitecup.jpg';
 import Hero1 from '../../assets/images/about/tablet/image-hero-whitecup.jpg';
 import Hero2 from '../../assets/images/about/desktop/image-hero-whitecup.jpg';
+import { useEffect } from "react";
+import ScrollReveal from "scrollreveal";
 
 export default function HeaderOfAboutPage() {
+
+
+  
+        useEffect(() => {
+          ScrollReveal().reveal(".from-left", {
+            distance: "100px",
+            origin: "left",
+            duration: 1200,
+          });
+      
+        }, [])
 
     return (
          <Stack component='header'>
@@ -13,7 +26,7 @@ export default function HeaderOfAboutPage() {
                <Box className='container' position='relative' display={{xs: 'block', sm: 'none'}}>
                  <img src={Hero0}   alt='image-hero-coffeepress' />
                  <Stack position='absolute' top='7%' left='5%'>
-                   <Stack component='section' sx={{display: 'flex', flexDirection: 'column',
+                   <Stack component='section' className='from-left' sx={{display: 'flex', flexDirection: 'column',
                              justifyContent: {xs: 'center', sx: 'flex-start'}, 
                               alignItems: {xs: 'center', sm: 'flex-start'},
                               textAlign: {xs: 'center', sm: 'left'}}}>
@@ -34,7 +47,7 @@ export default function HeaderOfAboutPage() {
                display={{xs:'none', sm: 'block', lg: 'none'}}>
                  <img src={Hero1}  alt='image-hero-coffeepress' />
                  <Stack position='absolute' top='15%' left='7%'>
-                 <Stack component='section' sx={{display: 'flex', flexDirection: 'column',
+                 <Stack component='section' className='from-left'  sx={{display: 'flex', flexDirection: 'column',
                              justifyContent: {xs: 'center', sx: 'flex-start'}, 
                               alignItems: {xs: 'center', sm: 'flex-start'},
                               textAlign: {xs: 'center', sm: 'left'}}}>
@@ -54,7 +67,7 @@ export default function HeaderOfAboutPage() {
                <Box className='container' position='relative' display={{xs:'none', sm: 'none', lg: 'block'}}>
                  <img  src={Hero2}  alt='image-hero-coffeepress' />
                  <Stack position='absolute' top='15%' left='5%'>
-                 <Stack component='section' sx={{display: 'flex', flexDirection: 'column',
+                 <Stack component='section' className='from-left'  sx={{display: 'flex', flexDirection: 'column',
                              justifyContent: {xs: 'center', sx: 'flex-start'}, 
                               alignItems: {xs: 'center', sm: 'flex-start'},
                               textAlign: {xs: 'center', sm: 'left'}}}>

@@ -3,9 +3,10 @@
 import {Stack} from '@mui/material';
 import NumCard from '../../components/NumCards';
 import HowList from '../../components/HowList';
-
 import Line from '../../components/Line';
 export default function AboutSection() {
+
+ 
     return (
          <Stack component='section' id='About-S'  padding={{lg: '2em 3em'}}
            >

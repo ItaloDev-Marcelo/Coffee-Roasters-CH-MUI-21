@@ -9,7 +9,27 @@ import Quality0 from  '../../assets/images/about/mobile/image-quality.jpg'
 import Quality1 from  '../../assets/images/about/tablet/image-quality.jpg'
 import Quality2 from  '../../assets/images/about/desktop/image-quality.jpg'
 
+import { useEffect } from "react";
+import ScrollReveal from "scrollreveal";
+
+
 export default function AboutArea() {
+
+    useEffect(() => {
+            ScrollReveal().reveal(".from-left", {
+              distance: "10px",
+              origin: "left",
+              duration: 1200,
+            });
+    
+            ScrollReveal().reveal(".from-right", {
+                distance: "10px",
+                origin: "right",
+                duration: 1200,
+              });
+        
+          }, [])
+
     return (
         <Stack component='section' id='quality-container' padding={{xs: '1em 2em', lg: '4em 2.5em'}}>
 
@@ -19,7 +39,7 @@ export default function AboutArea() {
             alignItems: 'center',
             margin: {xs: '1em 0', lg: '2em  0'}
         }}>
-                <Stack className='about-image'>
+                <Stack className='about-image from-left'>
                     <Stack display={{xs: 'block', md: 'none', lg: 'none'}}>
                         <img src={Barista0} alt=''/>
                     </Stack>
@@ -30,7 +50,7 @@ export default function AboutArea() {
                         <img src={Barista2} alt=''/>
                     </Stack>
                 </Stack>
-               <Stack sx={{width: {xs: '100%', md: '75%', lg: '400px'}}}>
+               <Stack className='from-right'  sx={{width: {xs: '100%', md: '75%', lg: '400px'}}}>
                <Typography variant='h2' margin='1em 0' fontSize={{xs: '2em'}}>
                 Our commitment
                 </Typography>
@@ -57,7 +77,7 @@ export default function AboutArea() {
             margin: {xs: '1em 0', lg: '1em 2em '}
             
         }} >
-                <Stack className='about-image'>
+                <Stack className='about-image from-right'>
                 <Stack display={{xs: 'block', md: 'none', lg: 'none'}}>
                         <img src={Quality0} alt=''/>
                     </Stack>
@@ -68,7 +88,7 @@ export default function AboutArea() {
                         <img src={Quality2}  alt=''/>
                     </Stack>
                 </Stack>
-                <Stack id='A-1' sx={{width: {xs: '100%', lg: '400px'}}} >
+                <Stack id='A-1' className='from-left'  sx={{width: {xs: '100%', lg: '400px'}}} >
                 <Typography variant='h2' margin='1em 0 .5em  0' fontSize={{xs: '2em'}}>Uncompromising quality
                 </Typography>
                 <Typography variant='p' className='txt'  margin='1em 0 1.4em 0'>Although we work with growers who pay close attention to all

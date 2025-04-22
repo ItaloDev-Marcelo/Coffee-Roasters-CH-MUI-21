@@ -37,6 +37,10 @@ button {
   text-transform:unset !important;
 }
 
+button:hover {
+  opacity: .9;
+}
+
 br {
   display: none;
 }
@@ -162,8 +166,7 @@ ul li:hover:after {
   top: 2em;
   font-size: 2.7em;
   font-weight: bold;
-  color: black;
-  
+  color: gray;
   font-family: 'Barlow Black', sans-serif !important;
 }
 
@@ -359,7 +362,6 @@ strong {
     top: 0;
     font-size: 7.5em;
     font-weight: bold;
-    color: black;
     transform: scale(.89);
   }
 
@@ -576,7 +578,6 @@ strong {
     top: -27%;
     font-size: 11em;
     font-weight: bold;
-    color: gray;
     transform: scale(.89);
   }
   

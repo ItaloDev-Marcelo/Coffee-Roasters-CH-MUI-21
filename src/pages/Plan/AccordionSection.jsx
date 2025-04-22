@@ -1,13 +1,8 @@
 import { useState, useEffect } from 'react';
-import {
-    Stack, Button, Accordion, AccordionSummary,
-    AccordionDetails, Typography,
-    Card, CardContent,
-    Dialog, DialogTitle, DialogContent, DialogContentText
-} from '@mui/material';
+import {Stack, Button, Accordion, AccordionSummary,AccordionDetails, Typography,Card, CardContent,Dialog, DialogTitle, DialogContent, DialogContentText} from '@mui/material';
 import Divider from '@mui/material/Divider';
-
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import ScrollReveal from "scrollreveal";
 
 
 export default function AccordionSection() {
@@ -23,7 +18,6 @@ export default function AccordionSection() {
         option5: ' ___-_ '
     })
 
-
     const SelectOption1 = (type, value) => {
         setSelectTypes(prev => (
             {
@@ -36,17 +30,13 @@ export default function AccordionSection() {
             setPrice(value === 'Every week' ? 7.20  : value === 'Every 2 weeks' ? 9.60 * 2 : 12 * 4)
         }
     }
-
     const ActiveDialogSection = () => {
         setActiveDialog(true)
         setOpen(!open)
     }
-
     const hundleToggle = () => {
         setOpen(!open)
     }
-    
-
     useEffect(() => {
         if (selectTypes.option5 !== ' ___-_ ') {
             setActiveDialog(!activeDialog)
@@ -55,6 +45,16 @@ export default function AccordionSection() {
     }, [selectTypes.option5])
 
   
+     useEffect(() => {
+              ScrollReveal().reveal(".from-top", {
+                distance: "20px",
+                origin: "top",
+                duration: 1300,
+              });
+      
+          
+          
+            }, [])
 
 
 
@@ -65,7 +65,7 @@ export default function AccordionSection() {
         <>
             <Stack padding={{xs: '3em 1.5em', lg: '2em  7em'}} sx={{display: 'flex', flexDirection: { xs: 'column', lg: 'row' },
              justifyContent: 'space-between'}}>
-                <Stack mt='2em' display={{xs: 'none', lg: 'block'}}>
+                <Stack  className='from-top' mt='2em' display={{xs: 'none', lg: 'block'}}>
                 <Accordion  disableGutters
         elevation={0}
         square
@@ -123,7 +123,7 @@ export default function AccordionSection() {
                 </Accordion>
                 </Stack>
                 
-                <Stack id='accordion-container' position='relative'  >
+                <Stack className='from-top'  id='accordion-container' position='relative'  >
                 <div>
                     <Accordion   disableGutters
         elevation={0}
