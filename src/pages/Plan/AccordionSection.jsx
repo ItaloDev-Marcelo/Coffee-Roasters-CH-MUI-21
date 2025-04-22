@@ -123,7 +123,7 @@ export default function AccordionSection() {
                 </Accordion>
                 </Stack>
                 
-                <Stack id='accordion-container'  >
+                <Stack id='accordion-container' position='relative'  >
                 <div>
                     <Accordion   disableGutters
         elevation={0}
@@ -358,7 +358,7 @@ export default function AccordionSection() {
 
                 <Stack component='article' id='Order-summary' margin={{xs: '2em 0 3em 0', lg: '0 0 1em 0'}}>
                     <Typography variant='h5' margin='.5em 0 .5em 0'>Order summary</Typography>
-                    <Typography variant='p' mb={2}>
+                    <Typography variant='p' fontSize={{xs: '1em', lg: '2em'}} mb={2}>
                         “I drink my coffee as  <strong>{selectTypes.option1}</strong> , with a
                           <strong>{selectTypes.option2} </strong>  type of bean.  <strong>{selectTypes.option3}</strong> 
                         ground ala <strong>{selectTypes.option4}</strong>    , sent to me <strong>{selectTypes.option5}</strong>   .”
