@@ -1,6 +1,6 @@
 
-import {Stack,  Typography} from '@mui/material';
-import logo from '../assets/images/shared/logo-white.svg';
+import {Stack} from '@mui/material';
+import logo from '../assets/images/shared/desktop/logo-white.svg';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -10,12 +10,13 @@ export default function Footer() {
        
 
    return  (
-      <Stack component='footer' sx={{display: 'flex', flexDirection: {xs: 'column', lg: 'row'},
-       justifyContent: {xs: 'center', lg: 'space-around'}}} >
-         <Stack id='logo'>
+    <Stack padding={{xs: '2em', lg: '2em 4em'}} margin={{lg: '2em 0'}}>
+        <Stack component='footer' sx={{display: 'flex', flexDirection: {xs: 'column', lg: 'row'},
+       justifyContent: {xs: 'center', lg: 'space-around'}, background: '#2c353e', padding: ' 1.7em 2em'}} >
+         <Stack id='logo' alignSelf={{xs: 'center', lg: 'flex-start'}}>
             <img src={logo} alt='logo' width='200px' />
          </Stack>
-         <Stack id='list'>
+         <Stack id='list' sx={{color: '#fff', position: 'relative', top: {xs: '-3em', lg: '.2em'}} }>
             <ul id='menu-list'>
                <li>Home</li>
                <li>About Us</li>
@@ -31,6 +32,7 @@ export default function Footer() {
             </Stack>
          </Stack>
       </Stack>
+    </Stack>
     )
 
 }

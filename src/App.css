@@ -296,6 +296,12 @@ svg {
   color: #0e8684;
 }
 
+
+footer svg:hover {
+  color: #0e8684;
+}
+
+
 .accordionCard {
   margin: 1em 0;
   color: antiquewhite;

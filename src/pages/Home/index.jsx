@@ -3,6 +3,7 @@ import OurCollection from './OurCollection';
 import WhyChooseUs from './WhyChooseUs';
 import HowItWorks from './HowItWorks';
 import NavBar from '../../components/NavTab';
+import Footer from '../../components/footer';
 
 export default  function HomePage() {
   return (
@@ -12,6 +13,7 @@ export default  function HomePage() {
     <OurCollection/>
     <WhyChooseUs/>
     <HowItWorks/>
+    <Footer/>
     </>
   )
 }
