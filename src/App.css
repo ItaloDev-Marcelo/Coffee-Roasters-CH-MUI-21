@@ -41,6 +41,11 @@ button:hover {
   opacity: .9;
 }
 
+.accordion-container p {
+  font-weight: bold;
+  color: gray;
+}
+
 br {
   display: none;
 }
@@ -244,7 +249,6 @@ ul li:hover:after {
   color: #fff !important;
   z-index: 3;
 }
-
 
 
 
