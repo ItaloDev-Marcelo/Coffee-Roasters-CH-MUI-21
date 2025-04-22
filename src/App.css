@@ -68,6 +68,15 @@ li {
   margin-top: 25%;
 }
 
+#List li {
+  margin: .5em 1em;
+}
+
+#List li:hover{
+  color: black;
+}
+
+
 ul li {
   margin: 1em 0;
 }
@@ -79,6 +88,7 @@ li{
 li:hover {
   color: #0e8684;
 }
+
 
 ul li:hover:after {
   content: '';

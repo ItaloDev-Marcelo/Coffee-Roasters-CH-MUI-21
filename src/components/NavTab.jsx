@@ -28,7 +28,7 @@ export default function WhyCard() {
                  <Stack display={{ xs: 'block', lg: 'none' }} onClick={() => setMenu(!menu)} >
                         <img src={close} alt='close' />
                     </Stack>
-                    <ul>
+                    <ul  id='menu-list'>
                         <li onClick={() => navegate('/Home')}>Home</li>
                         <li onClick={() => navegate('/About-us')}>About Us </li>
                         <li onClick={() => navegate('/Plan')}>Create your plan</li>

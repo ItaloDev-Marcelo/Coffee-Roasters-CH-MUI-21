@@ -14,7 +14,7 @@ export default function Headquarters() {
                     padding: {xs: '1em 2em', lg: '7em 10em'}
                 }} >
              <Typography variant='h3' fontSize={{xs: '2em', lg: '2.2em'}}
-              margin={{xs:'1em 0', lg: '2em 0'}}>Our headquarters</Typography>
+              margin={{xs:'1em 0', lg: '2em -1em'}}>Our headquarters</Typography>
              <Stack>
               <Stack sx={{display: 'flex',
         flexDirection: {xs: 'column', lg: 'row'}}} width={{lg: '100%'}}>
@@ -28,7 +28,8 @@ export default function Headquarters() {
                       <img src={item.Icon}  className='mini-icon' alt=''/>
                       </Stack>
                       <Typography variant='h3' fontSize={{xs: '2em'}} margin={{xs: '.5em 0'}}>{item.Title}</Typography>
-                      <ul>
+                      <ul id='List' style={{listStyleType: 'none', padding: 0, display:
+                         'flex', flexDirection: 'column', alignItems:'flex-start', marginLeft: '-1em'}}>
                          <li>{item.Street}</li>
                          <li>{item.City}</li>
                          <li>{item.Address}</li>
