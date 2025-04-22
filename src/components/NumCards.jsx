@@ -28,8 +28,8 @@ export default function NumCard({Num, Title, Text, index}) {
                            <Stack className='Num-card from-left' width={{xs: 250, md: 200, lg: 300}}>
                            <Typography variant='h4'
                             sx={{fontSize: {xs: '4rem', md: '5rem'}, margin: '1em 0 .5em 0'}}> {Num} </Typography>
-                           <Typography variant='h5'  sx={{fontSize: {xs: '1.7em', md: '2em'}, margin: '0 0 .7em 0'}}> {Title} </Typography>
-                           <Typography variant='p' sx={{ width: {md: 250}}} > {Text} </Typography>
+                           <Typography variant='h5'  sx={{fontSize: {xs: '1.7em', md: '1.5em'}, margin: '0 0 .7em 0'}}> {Title} </Typography>
+                           <Typography variant='p' className='txt'  sx={{ width: {md: 250}}} > {Text} </Typography>
                            </Stack>
      </Stack>
     )

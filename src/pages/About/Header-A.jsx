@@ -21,7 +21,7 @@ export default function HeaderOfAboutPage() {
                               fontSize={{xs: '3em', sm: '4em', lg: '5.5em'}} color='white'>
                                 About Us
                                 </Typography>
-                              <Typography variant='p'  margin={{xs: '.5em 0 1.5em 0', lg: '.2em 0 2em 0'}}
+                              <Typography variant='p' className='txt'   margin={{xs: '.5em 0 1.5em 0', lg: '.2em 0 2em 0'}}
                                color='white' width={{xs: 270, sm: 400, lg: 392}}>
                                  Coffeeroasters began its journey of exotic discovery in 1999, highlighting stories of coffee from around the world. We have since been dedicated to bring the perfect cup - from bean to brew - in every shipment.
                                </Typography>
@@ -42,7 +42,7 @@ export default function HeaderOfAboutPage() {
                               fontSize={{xs: '3em', sm: '4em', lg: '5.5em'}} color='white'>
                                 About Us
                                 </Typography>
-                              <Typography variant='p'  margin={{xs: '.5em 0 1.5em 0', lg: '.2em 0 2em 0'}}
+                              <Typography variant='p' className='txt'   margin={{xs: '.5em 0 1.5em 0', lg: '.2em 0 2em 0'}}
                                color='white' width={{xs: 270, sm: 400, lg: 392}}>
                                  Coffeeroasters began its journey of exotic discovery in 1999, highlighting stories of coffee from around the world. We have since been dedicated to bring the perfect cup - from bean to brew - in every shipment.
                                </Typography>
@@ -62,7 +62,7 @@ export default function HeaderOfAboutPage() {
                               fontSize={{xs: '3em', sm: '4em', lg: '5.5em'}} color='white'>
                                 About Us
                                 </Typography>
-                              <Typography variant='p'  margin={{xs: '.5em 0 1.5em 0',
+                              <Typography variant='p' className='txt'   margin={{xs: '.5em 0 1.5em 0',
                                lg: '-1em 0 .2em 0'}}
                                color='white' width={{xs: 270, sm: 400, lg: 392}}>
                                  Coffeeroasters began its journey of exotic discovery in 1999, highlighting stories of coffee from around the world. We have since been dedicated to bring the perfect cup - from bean to brew - in every shipment.

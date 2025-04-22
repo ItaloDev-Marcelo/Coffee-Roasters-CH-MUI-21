@@ -23,7 +23,7 @@ export default function WhyCard() {
                     </Stack>
 
 
-                <Stack  >
+                <Stack fontWeight='bold' color='gray' >
                 <nav className={menu ? ' menu active' : 'menu'}>
                  <Stack display={{ xs: 'block', lg: 'none' }} onClick={() => setMenu(!menu)} >
                         <img src={close} alt='close' />

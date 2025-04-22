@@ -25,8 +25,8 @@ export default function WhyCard() {
                                alt={item.title} width='75' style={{marginTop: '-2em'}} />
                              </Stack>
                              <CardContent className='content'>
-                                 <Typography variant='h3'>{item.title}</Typography>
-                                 <Typography variant='p'>{item.text}</Typography>
+                                 <Typography variant='h3' margin='0 0 .5em 0'>{item.title}</Typography>
+                                 <Typography variant='p' className='txt' >{item.text}</Typography>
                              </CardContent>
                         </Card>
                     )

@@ -22,7 +22,7 @@ export default function Headquarters() {
               {
                    HeadquartersList.map((item, index) => {
                      return  (
-                      <Stack key={index}  className='mini-card'
+                      <Stack key={index}  className='mini-card' backgroundColor='pink'
                        width={{xs: 270, sm: 400, lg: 300}} margin={{xs: '1.3em 0', lg: '2em 0'}}>
                       <Stack sx={{alignSelf: {xs: 'center', lg: 'flex-start'}}}>
                       <img src={item.Icon}  className='mini-icon' alt=''/>
@@ -31,7 +31,7 @@ export default function Headquarters() {
                       <ul id='List' style={{listStyleType: 'none', padding: 0, display:
                          'flex', flexDirection: 'column',
                          textAlign: {xs: 'center', lg: 'left'},
-                          alignItems:{xs: 'center', lg: 'flex-start'}, marginLeft: '-1em'}}>
+                          alignContent:{xs: 'center', lg: 'flex-end'}, marginLeft: '-1em'}}>
                          <li>{item.Street}</li>
                          <li>{item.City}</li>
                          <li>{item.Address}</li>

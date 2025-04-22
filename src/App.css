@@ -6,6 +6,28 @@
 }
 
 
+@font-face {
+  font-family: 'Barlow Black';
+  src: url('./assets/images/fonts/fraunces/Fraunces9pt-Black.woff2') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Barlow Medium';
+  src: url('./assets/images/fonts/barlow/Barlow-Medium.ttf') format('truetype');
+
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Barlow Black', sans-serif !important;
+}
+
+.txt {
+  font-family: 'Barlow Medium' sans-serif !important ; 
+  letter-spacing: 1px;
+}
 
 body {
   font-size: 1em;
@@ -134,6 +156,8 @@ ul li:hover:after {
   font-size: 2.7em;
   font-weight: bold;
   color: black;
+  
+  font-family: 'Barlow Black', sans-serif !important;
 }
 
 
@@ -532,14 +556,14 @@ strong {
   .collection-T::after {
     content: 'our Collection' ;
     display: block;
-    width: 1100px;
+    width: 1200px;
     height: 200px;
     position: absolute;
-    left: 7%;
+    left: 2%;
     top: -27%;
     font-size: 11em;
     font-weight: bold;
-    color: black;
+    color: gray;
     transform: scale(.89);
   }
   

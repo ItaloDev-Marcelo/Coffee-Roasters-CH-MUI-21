@@ -34,7 +34,7 @@ export default function OurCollection() {
               </Stack>
               <Stack className='info' width={{md: '385px', lg: 'auto'}} padding={{xs: '2em', lg: '1.5em'}}  >
                  <Typography variant='h2' fontSize='1.2em'>{data.Title}</Typography>
-                 <Typography variant='p' margin={{xs: '1em 0', lg: '2em 0'}} >{data.Text} </Typography>
+                 <Typography variant='p' className='txt'  margin={{xs: '1em 0', lg: '2em 0'}} >{data.Text} </Typography>
               </Stack> 
            </Stack>
            })

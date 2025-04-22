@@ -147,7 +147,7 @@ export default function AccordionSection() {
                                     'accordionCard'} onClick={() => SelectOption1('option1', ' Capsule ')}>
                                 <CardContent>
                                     <Typography variant='h5'>Capsule</Typography>
-                                    <Typography variant='p'>Compatible with Nespresso systems and similar brewers</Typography>
+                                    <Typography variant='p'   className='txt'>Compatible with Nespresso systems and similar brewers</Typography>
                                 </CardContent>
 
                             </Card>
@@ -157,7 +157,7 @@ export default function AccordionSection() {
                                 'accordionCard'} onClick={() => SelectOption1('option1', ' Filter ')}>
                                 <CardContent>
                                     <Typography variant='h5'>Filter</Typography>
-                                    <Typography variant='p'>For pour over or drip methods like Aeropress, Chemex, and V60</Typography>
+                                    <Typography variant='p' className='txt'>For pour over or drip methods like Aeropress, Chemex, and V60</Typography>
                                 </CardContent>
                             </Card>
 
@@ -166,7 +166,7 @@ export default function AccordionSection() {
                                 'accordionCard'} onClick={() => SelectOption1('option1', ' Expresso ')}>
                                 <CardContent>
                                     <Typography variant='h5'>Expresso</Typography>
-                                    <Typography variant='p'>Dense and finely ground benas for an intense, flavorful experience</Typography>
+                                    <Typography variant='p' className='txt'>Dense and finely ground benas for an intense, flavorful experience</Typography>
                                 </CardContent>
                             </Card>
 
@@ -197,7 +197,7 @@ export default function AccordionSection() {
                                 'accordionCard'} onClick={() => SelectOption1('option2', ' Single Origin ')}>
                                 <CardContent>
                                     <Typography variant='h5'>Single Origin</Typography>
-                                    <Typography variant='p'>Distinct,high quality coffee from a specific family-owned farm</Typography>
+                                    <Typography variant='p' className='txt'>Distinct,high quality coffee from a specific family-owned farm</Typography>
                                 </CardContent>
                             </Card>
 
@@ -205,7 +205,7 @@ export default function AccordionSection() {
                                 'accordionCard'} onClick={() => SelectOption1('option2', ' Decaf ')}>
                                 <CardContent>
                                     <Typography variant='h5'>Decaf</Typography>
-                                    <Typography variant='p'>Just like regular coffee, except the caffeine has been removed</Typography>
+                                    <Typography variant='p' className='txt'>Just like regular coffee, except the caffeine has been removed</Typography>
                                 </CardContent>
                             </Card>
 
@@ -213,7 +213,7 @@ export default function AccordionSection() {
                                 'accordionCard'} onClick={() => SelectOption1('option2', ' Blended ')}>
                                 <CardContent>
                                     <Typography variant='h5'>Blended</Typography>
-                                    <Typography variant='p'>Combination of two or three dark roasted beans of organic coffees</Typography>
+                                    <Typography variant='p' className='txt'>Combination of two or three dark roasted beans of organic coffees</Typography>
                                 </CardContent>
                             </Card>
                         </AccordionDetails>
@@ -241,7 +241,7 @@ export default function AccordionSection() {
                                 'accordionCard'} onClick={() => SelectOption1('option3', ' 250g ')}>
                                 <CardContent>
                                     <Typography variant='h5'>250g</Typography>
-                                    <Typography variant='p'>Perfect for the solo drinker. Yields about 12 delicious cups.</Typography>
+                                    <Typography variant='p' className='txt'>Perfect for the solo drinker. Yields about 12 delicious cups.</Typography>
                                 </CardContent>
                             </Card>
 
@@ -249,7 +249,7 @@ export default function AccordionSection() {
                                 'accordionCard'} onClick={() => SelectOption1('option3', ' 500g ')}>
                                 <CardContent>
                                     <Typography variant='h5'>500g</Typography>
-                                    <Typography variant='p'>Perfect option for a couple. Yields abouut 40 delectable cups.</Typography>
+                                    <Typography variant='p' className='txt'>Perfect option for a couple. Yields abouut 40 delectable cups.</Typography>
                                 </CardContent>
                             </Card>
 
@@ -257,7 +257,7 @@ export default function AccordionSection() {
                                 'accordionCard'} onClick={() => SelectOption1('option3', ' 1000g ')}>
                                 <CardContent>
                                     <Typography variant='h5'>1000g</Typography>
-                                    <Typography variant='p'>Perfect for offices and events. Yields about 90 delightfull cups. </Typography>
+                                    <Typography variant='p' className='txt'>Perfect for offices and events. Yields about 90 delightfull cups. </Typography>
                                 </CardContent>
                             </Card>
                         </AccordionDetails>
@@ -285,7 +285,7 @@ export default function AccordionSection() {
                                 'accordionCard'} onClick={() => SelectOption1('option4', ' Wholebean ')}>
                                 <CardContent>
                                     <Typography variant='h5'>Wholebean</Typography>
-                                    <Typography variant='p'>Best choice if you chersih the full sensory experience</Typography>
+                                    <Typography variant='p' className='txt'>Best choice if you chersih the full sensory experience</Typography>
                                 </CardContent>
                             </Card>
 
@@ -293,7 +293,7 @@ export default function AccordionSection() {
                                 'accordionCard'} onClick={() => SelectOption1('option4', ' Filter ')}>
                                 <CardContent>
                                     <Typography variant='h5'>Filter</Typography>
-                                    <Typography variant='p'>For drip or pour-over coffee methods such as V60 or Aeropress</Typography>
+                                    <Typography variant='p' className='txt'>For drip or pour-over coffee methods such as V60 or Aeropress</Typography>
                                 </CardContent>
                             </Card>
 
@@ -301,7 +301,7 @@ export default function AccordionSection() {
                                 'accordionCard'} onClick={() => SelectOption1('option4', ' Cafetiére ')}>
                                 <CardContent>
                                     <Typography variant='h5'>Cafetiére</Typography>
-                                    <Typography variant='p'>Course ground beans specially suited for french press coffee</Typography>
+                                    <Typography variant='p' className='txt'>Course ground beans specially suited for french press coffee</Typography>
                                 </CardContent>
                             </Card>
 
@@ -331,7 +331,7 @@ export default function AccordionSection() {
                                 'accordionCard'} onClick={() => SelectOption1('option5', ' Every week ')}>
                                 <CardContent>
                                     <Typography variant='h5'>Every week</Typography>
-                                    <Typography variant='p'>$7.2 per shipment. Includes free First-class shipping.</Typography>
+                                    <Typography variant='p' className='txt'>$7.2 per shipment. Includes free First-class shipping.</Typography>
                                 </CardContent>
                             </Card>
 
@@ -340,7 +340,7 @@ export default function AccordionSection() {
                                 onClick={() => SelectOption1('option5', ' Every 2 weeks ')}>
                                 <CardContent>
                                     <Typography variant='h5'>Every 2 weeks</Typography>
-                                    <Typography variant='p'>$9.60 per shipment. Includes free priority shipping</Typography>
+                                    <Typography variant='p' className='txt'>$9.60 per shipment. Includes free priority shipping</Typography>
                                 </CardContent>
                             </Card>
 
@@ -348,7 +348,7 @@ export default function AccordionSection() {
                                 'accordionCard'} onClick={() => SelectOption1('option5', ' Every Month ')}>
                                 <CardContent>
                                     <Typography variant='h5'>Every Month</Typography>
-                                    <Typography variant='p'>$12.00 per shipment. Includes free prioruty shipping.</Typography>
+                                    <Typography variant='p' className='txt'>$12.00 per shipment. Includes free prioruty shipping.</Typography>
                                 </CardContent>
                             </Card>
                         </AccordionDetails>
@@ -358,7 +358,7 @@ export default function AccordionSection() {
 
                 <Stack component='article' id='Order-summary' margin={{xs: '2em 0 3em 0', lg: '0 0 1em 0'}}>
                     <Typography variant='h5' margin='.5em 0 .5em 0'>Order summary</Typography>
-                    <Typography variant='p' fontSize={{xs: '1em', lg: '2em'}} mb={2}>
+                    <Typography variant='p' className='txt' fontSize={{xs: '1em', lg: '2em'}} mb={2}>
                         “I drink my coffee as  <strong>{selectTypes.option1}</strong> , with a
                           <strong>{selectTypes.option2} </strong>  type of bean.  <strong>{selectTypes.option3}</strong> 
                         ground ala <strong>{selectTypes.option4}</strong>    , sent to me <strong>{selectTypes.option5}</strong>   .”

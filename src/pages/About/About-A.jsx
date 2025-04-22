@@ -34,7 +34,7 @@ export default function AboutArea() {
                <Typography variant='h2' margin='1em 0' fontSize={{xs: '2em'}}>
                 Our commitment
                 </Typography>
-                <Typography margin='1em 0' variant='p'>
+                <Typography margin='1em 0' variant='p' className='txt' >
                 We’re built on a simple mission and a commitment to doing good along the way. 
                 We want to make it easy for you to discover and brew the world’s best coffee at home. 
                 It all starts at the source. To locate the specific lots we want to purchase, 
@@ -71,7 +71,7 @@ export default function AboutArea() {
                 <Stack id='A-1' sx={{width: {xs: '100%', lg: '400px'}}} >
                 <Typography variant='h2' margin='1em 0 .5em  0' fontSize={{xs: '2em'}}>Uncompromising quality
                 </Typography>
-                <Typography variant='p' margin='1em 0 1.4em 0'>Although we work with growers who pay close attention to all
+                <Typography variant='p' className='txt'  margin='1em 0 1.4em 0'>Although we work with growers who pay close attention to all
                      stages of harvest and processing, we employ, on our end, a 
                      rigorous quality control program to avoid
                       over-roasting or baking the coffee dry.
