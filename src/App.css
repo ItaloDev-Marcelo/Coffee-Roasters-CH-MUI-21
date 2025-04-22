@@ -90,6 +90,13 @@ li {
   margin-top: 25%;
 }
 
+#List {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+}
+
 #List li {
   margin: .5em 1em;
 }
@@ -725,6 +732,11 @@ ul li {
   padding: 2em 2.5em;
 }
 
+
+#List {
+  display: flex;
+  align-items:flex-start;
+}
 
   
 }

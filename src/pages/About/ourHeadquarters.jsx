@@ -27,11 +27,9 @@ export default function Headquarters() {
                       <Stack sx={{alignSelf: {xs: 'center', lg: 'flex-start'}}}>
                       <img src={item.Icon}  className='mini-icon' alt=''/>
                       </Stack>
-                      <Typography variant='h3' fontSize={{xs: '2em'}} margin={{xs: '.5em 0'}}>{item.Title}</Typography>
+                      <Typography variant='h3' fontSize={{xs: '2em', lg: '1.7em'}} margin={{xs: '.5em 0'}}>{item.Title}</Typography>
                       <ul id='List' style={{listStyleType: 'none', padding: 0, display:
-                         'flex', flexDirection: 'column',
-                         textAlign: {xs: 'center', lg: 'left'},
-                          alignContent:{xs: 'center', lg: 'flex-end'}, marginLeft: '-1em'}}>
+                         'flex', flexDirection: 'column',  marginLeft: '-1em'}}>
                          <li>{item.Street}</li>
                          <li>{item.City}</li>
                          <li>{item.Address}</li>
