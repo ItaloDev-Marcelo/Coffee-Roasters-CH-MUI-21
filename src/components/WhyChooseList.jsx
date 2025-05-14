@@ -1,4 +1,4 @@
-import ImagesBank from '../../components/ImagesBank';
+import ImagesBank from '../components/ImagesBank';
 const {Beans , Gift, Truck} = ImagesBank 
 
 export default [
