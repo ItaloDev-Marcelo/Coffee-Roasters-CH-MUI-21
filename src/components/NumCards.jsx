@@ -1,21 +1,11 @@
 
 import {Stack,  Typography} from '@mui/material';
-import { useEffect } from "react";
-import ScrollReveal from "scrollreveal";
 
 
 export default function NumCard({Num, Title, Text, index}) {
 
    
-        useEffect(() => {
-                  ScrollReveal().reveal(".from-left", {
-                    distance: "50px",
-                    origin: "left",
-                    duration: 1400,
-                  });
-              
-                }, [])
-
+        
    return  (
       <Stack key={index} component='article' 
        sx={{display: 'flex', flexDirection: 'column',

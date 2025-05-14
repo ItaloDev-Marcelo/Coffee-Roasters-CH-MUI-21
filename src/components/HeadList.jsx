@@ -1,8 +1,6 @@
-import Icon0 from '../assets/images/about/desktop/illustration-uk.svg';
-import Icon1 from '../assets/images/about/desktop/illustration-canada.svg';
-import Icon2 from '../assets/images/about/desktop/illustration-australia.svg';
+import ImageBank from '../components/ImagesBank';
 
-
+const {Icon0, Icon1, Icon2} = ImageBank
 
 export default [
     {

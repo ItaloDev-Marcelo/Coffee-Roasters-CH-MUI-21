@@ -1,7 +1,7 @@
 import {Stack} from '@mui/material';
 import { useState } from 'react';
 import { useNavigate } from "react-router-dom"
-import ImagesBank from '../../components/ImagesBank';
+import ImagesBank from '../components/ImagesBank';
 
 export default function WhyCard() {
 
