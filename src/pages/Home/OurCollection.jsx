@@ -17,7 +17,8 @@ export default function OurCollection() {
          {
            CoffeeList.map((data, index) => {
               return   <Stack key={index} sx={{display:'flex', 
-              flexDirection: {xs: 'column', md: 'row', lg: 'column'}}} className='Coffee-block from-top' >
+              flexDirection: {xs: 'column', md: 'row', lg: 'column'}}}
+               className='Coffee-block from-top' >
               <Stack className='coffee-image'
                margin={{xs: ' 1em 0', lg: '0 0 3em 0'}} >
                   <img src={data.Icon} alt={data.Title}/>

@@ -1,18 +1,8 @@
 import {Stack, Card,  CardContent, Typography} from '@mui/material';
 import WhyChooseList from '../components/WhyChooseList';
-import { useEffect } from "react";
-import ScrollReveal from "scrollreveal";
-
 export default function WhyCard() {
 
-     useEffect(() => {
-               ScrollReveal().reveal(".from-top", {
-                 distance: "50px",
-                 origin: "top",
-                 duration: 1000,
-               });
-           
-             }, [])
+     
 
     return (
          <Stack component='section' id='card-container' >
