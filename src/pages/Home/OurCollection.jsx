@@ -13,7 +13,7 @@ export default function OurCollection() {
        textAlign: {xs: 'center', md: 'left', lg: 'center'},
        margin: {lg: '5em 0 2em 0'}
       }} padding={{xs: '1em 2em', lg: '2.5em 7rem'}}>
-         <Stack className='collection-T '></Stack>
+         <Stack className='collection-T'></Stack>
          {
            CoffeeList.map((data, index) => {
               return   <Stack key={index} sx={{display:'flex', 
