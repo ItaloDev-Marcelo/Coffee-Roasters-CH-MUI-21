@@ -1,34 +1,10 @@
-
-
 import { Stack, Typography } from '@mui/material';
-import Barista0 from '../../assets/images/about/mobile/image-commitment.jpg';
-import Barista1 from '../../assets/images/about/tablet/image-commitment.jpg';
-import Barista2 from '../../assets/images/about/desktop/image-commitment.jpg';
-
-import Quality0 from  '../../assets/images/about/mobile/image-quality.jpg'
-import Quality1 from  '../../assets/images/about/tablet/image-quality.jpg'
-import Quality2 from  '../../assets/images/about/desktop/image-quality.jpg'
-
-import { useEffect } from "react";
-import ScrollReveal from "scrollreveal";
+import ImagesBank from '../../components/ImagesBank';
 
 
 export default function AboutArea() {
 
-    useEffect(() => {
-            ScrollReveal().reveal(".from-left", {
-              distance: "10px",
-              origin: "left",
-              duration: 1200,
-            });
-    
-            ScrollReveal().reveal(".from-right", {
-                distance: "10px",
-                origin: "right",
-                duration: 1200,
-              });
-        
-          }, [])
+     const {Barista0, Barista1, Barista2, Quality0, Quality1, Quality2} = ImagesBank;
 
     return (
         <Stack component='section' id='quality-container' padding={{xs: '1em 2em', lg: '4em 2.5em'}}>

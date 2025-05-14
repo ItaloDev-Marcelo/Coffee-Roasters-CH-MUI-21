@@ -1,7 +1,7 @@
-import CoffeeImage0 from '../assets/images/home/desktop/image-gran-espresso.png';
-import CoffeeImage1 from '../assets/images/home/desktop/image-planalto.png';
-import CoffeeImage2 from '../assets/images/home/desktop/image-piccollo.png';
-import CoffeeImage3 from '../assets/images/home/desktop/image-danche.png';
+
+import imagesBank from '../components/ImagesBank';
+
+const {CoffeeImage0, CoffeeImage1, CoffeeImage2, CoffeeImage3} = imagesBank
 
 export default [
      {

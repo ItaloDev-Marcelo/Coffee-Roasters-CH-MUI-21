@@ -1,25 +1,10 @@
 import {Stack, Box} from '@mui/material';
-import CoffeeHero0 from '../../assets/images/home/mobile/image-hero-coffeepress.jpg';
-import CoffeeHero1 from '../../assets/images/home/tablet/image-hero-coffeepress.jpg';
-import CoffeeHero2 from '../../assets/images/home/desktop/image-hero-coffeepress.jpg';
 import HeaderInformation from '../../components/headerInformation'
-import { useEffect } from "react";
-import ScrollReveal from "scrollreveal";
+import ImagesBank from '../../components/ImagesBank';
 export default function Header() {
 
-
-  useEffect(() => {
-    ScrollReveal().reveal(".from-left", {
-      distance: "100px",
-      origin: "left",
-      duration: 1200,
-    });
-
-  }, [])
-
+  const {CoffeeHero0, CoffeeHero1, CoffeeHero2} = ImagesBank ;
  
-
-
    
     return (
          <Stack component='header'>

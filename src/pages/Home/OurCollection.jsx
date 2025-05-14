@@ -1,18 +1,8 @@
 import {Stack, Typography} from '@mui/material';
 import CoffeeList from '../../components/CoffeList';
-import { useEffect } from "react";
-import ScrollReveal from "scrollreveal";
-
 export default function OurCollection() {
 
-     useEffect(() => {
-       ScrollReveal().reveal(".from-top", {
-         distance: "10px",
-         origin: "top",
-         duration: 1000,
-       });
-   
-     }, [])
+    
    
 
     return (

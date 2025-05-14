@@ -1,11 +1,12 @@
 
 import {Stack} from '@mui/material';
-import logo from '../assets/images/shared/desktop/logo-white.svg';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import imagesBank from '../components/ImagesBank';
 export default function Footer() {
 
+   const {LogoWhite} = imagesBank;
    
        
 
@@ -14,7 +15,7 @@ export default function Footer() {
         <Stack component='footer' sx={{display: 'flex', flexDirection: {xs: 'column', lg: 'row'},
        justifyContent: {xs: 'center', lg: 'space-around'}, background: '#2c353e', padding: ' 1.7em 2em'}} >
          <Stack id='logo' alignSelf={{xs: 'center', lg: 'flex-start'}}>
-            <img src={logo} alt='logo' width='200px' />
+            <img src={LogoWhite} alt='logo' width='200px' />
          </Stack>
          <Stack id='list' sx={{color: '#fff', position: 'relative', top: {xs: '-3em', lg: '.2em'}} }>
             <ul id='menu-list'>

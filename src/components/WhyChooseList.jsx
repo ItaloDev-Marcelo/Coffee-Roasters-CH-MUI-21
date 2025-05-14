@@ -1,6 +1,5 @@
-import Beans from '../assets/images/home/desktop/icon-coffee-bean.svg';
-import Gift from '../assets/images/home/desktop/icon-gift.svg';
-import Truck from '../assets/images/home/desktop/icon-truck.svg';
+import ImagesBank from '../../components/ImagesBank';
+const {Beans , Gift, Truck} = ImagesBank 
 
 export default [
     {

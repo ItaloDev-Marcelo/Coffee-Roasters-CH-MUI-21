@@ -32,8 +32,8 @@ import HeroBlackcup2 from '../assets/images/plan/desktop/image-hero-blackcup.jpg
 const Imagens = {
    CoffeeImage0: CoffeeImage0,
    CoffeeImage1: CoffeeImage1,
+   CoffeeImage2: CoffeeImage2,
    CoffeeImage3: CoffeeImage3,
-   CoffeeImage4: CoffeeImage0,
    LogoW: LogoWhite,
    Icon0 : Icon0 ,
    Icon1: Icon1,
@@ -60,3 +60,5 @@ const Imagens = {
    HeroBlackcup1: HeroBlackcup1,
    HeroBlackcup2: HeroBlackcup2
 }
+
+export default Imagens

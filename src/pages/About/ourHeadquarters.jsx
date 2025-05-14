@@ -2,26 +2,10 @@
 
 import { Stack, Typography } from '@mui/material';
 import HeadquartersList from '../../components/HeadList'
-import { useEffect } from "react";
-import ScrollReveal from "scrollreveal";
 
 export default function Headquarters() {
 
-      useEffect(() => {
-        ScrollReveal().reveal(".from-left", {
-          distance: "100px",
-          origin: "left",
-          duration: 1200,
-        });
-
-        ScrollReveal().reveal(".from-right", {
-            distance: "100px",
-            origin: "right",
-            duration: 1200,
-          });
-    
-      }, [])
-    
+     
      
 
     return (
