@@ -233,7 +233,7 @@ ul li:hover:after {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: -20rem;
+  margin-top: -15rem;
   padding: 1em;
 }
 
@@ -394,7 +394,7 @@ strong {
 
 
 #card-container {
-  margin-top: -15rem;
+  margin-top: -13rem;
 }
 
 .card {
@@ -581,7 +581,7 @@ strong {
     position: absolute;
     left: 2%;
     top: -27%;
-    font-size: 7em;
+    font-size: 5em;
     font-weight: bold;
     transform: scale(.89);
   }
@@ -611,7 +611,7 @@ strong {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: -14rem;
+  margin-top: -10rem;
 }
 
 .card {
