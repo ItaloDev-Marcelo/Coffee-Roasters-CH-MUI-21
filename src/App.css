@@ -546,6 +546,7 @@ strong {
 }
 
 @media (min-width: 1280px) {
+  
   .coffee-image  > img {
     max-width: 100%;
     width: 75%;
