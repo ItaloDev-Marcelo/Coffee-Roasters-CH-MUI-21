@@ -15,7 +15,7 @@ export default function WhyCard() {
     return (
          <Stack component='header' className='navegation-tab' padding={{xs: '2em' , md: '1em 2em', lg: '1.5em 3em'}}
           sx={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center'}} >
-                    <Stack>
+                    <Stack id='logo'>
                         <img src={Logo} width='200px' alt='logo' />
                     </Stack>
                     <Stack className='hamburger-menu' onClick={() => setMenu(!menu)} display={{ xs: 'block', lg: 'none' }} >

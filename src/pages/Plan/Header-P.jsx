@@ -13,7 +13,7 @@ export default function HeaderOfAboutPage() {
             <Box id='banner-container'>
                <Box className='container ' position='relative' display={{xs: 'block', sm: 'none'}}>
                  <img src={HeroBlackcup0}   alt='image-hero-coffeepress' />
-                 <Stack className='from-left-me' position='absolute' top='7%' left='7%'>
+                 <Stack className='from-left-me' position='absolute' top='7%' left='1%'>
                    <Stack component='section' sx={{display: 'flex', flexDirection: 'column',
                              justifyContent: {xs: 'center', sx: 'flex-start'}, 
                               alignItems: {xs: 'center', sm: 'flex-start'},

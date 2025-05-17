@@ -6,13 +6,13 @@ export default function OurCollection() {
    
 
     return (
-      <Stack component='section' position='relative' sx={{display:'flex', flexDirection: {xs:'column', lg: 'row'},
+      <Stack component='section'  position='relative' sx={{display:'flex', flexDirection: {xs:'column', lg: 'row'},
        justifyContent: {xs: 'center', lg: 'flex-start'},
        alignItems: {xs: 'center', lg: 'flex-start'},
-       alignContent: {xs: 'center', lg: 'flex-start'},
+       alignContent: {xs: 'center', lg: 'center'},
        textAlign: {xs: 'center', md: 'left', lg: 'center'},
-       margin: {lg: '5em 0 2em 0'}
-      }} padding={{xs: '1em 2em', lg: '2.5em 7rem'}}>
+       margin: {lg: '5em 0 2em 0'}, padding: {xs: '1em 2em', lg: '2.5em 5rem'}
+      }}>
          <Stack className='collection-T'></Stack>
          {
            CoffeeList.map((data, index) => {

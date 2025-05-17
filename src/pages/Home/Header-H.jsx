@@ -7,11 +7,11 @@ export default function Header() {
  
    
     return (
-         <Stack component='header'>
+         <Stack component='header' sx={{ padding: {lg: '0 1em'} }}>
             <Box id='banner-container'>
                <Box className='container' position='relative' display={{xs: 'block', sm: 'none'}}>
                  <img src={CoffeeHero0}  alt='image-hero-coffeepress' />
-                 <Stack className='from-left' position='absolute' top='7%' left='5%'>
+                 <Stack className='from-left' position='absolute' top='7%' left='1%'>
                  <HeaderInformation/>
                  </Stack>
                </Box>

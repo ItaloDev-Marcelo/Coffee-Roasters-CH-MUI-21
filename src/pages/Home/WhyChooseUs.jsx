@@ -8,7 +8,7 @@ export default function WhyChooseUs() {
    
 
     return (
-        <Stack component='section' id='WhyChooseUs'>
+        <Stack component='section' id='WhyChooseUs' >
             <Stack id='bg'>
             <Box className='blockImage-Container from-top' >
                 <WhyChooseHeader/>

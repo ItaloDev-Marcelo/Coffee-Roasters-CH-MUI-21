@@ -3,10 +3,11 @@ import CoffeeImage1 from '../assets/images/home/desktop/image-planalto.png';
 import CoffeeImage2 from '../assets/images/home/desktop/image-piccollo.png';
 import CoffeeImage3 from '../assets/images/home/desktop/image-danche.png';
 import LogoWhite from '../assets/images/shared/desktop/logo-white.svg';
+import Logo from '../assets/images/shared/desktop/logo.svg';
 import Icon0 from '../assets/images/about/desktop/illustration-uk.svg';
 import Icon1 from '../assets/images/about/desktop/illustration-canada.svg';
 import Icon2 from '../assets/images/about/desktop/illustration-australia.svg';
-import Logo from '../assets/images/shared/desktop/logo.svg';
+
 import Open from '../assets/images/shared/mobile/icon-hamburger.svg';
 import Close from '../assets/images/shared/mobile/icon-close.svg';
 import Beans from '../assets/images/home/desktop/icon-coffee-bean.svg';

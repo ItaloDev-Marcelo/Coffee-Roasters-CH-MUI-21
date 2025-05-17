@@ -233,7 +233,7 @@ ul li:hover:after {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: -15rem;
+  margin-top: -35em;
   padding: 1em;
 }
 
@@ -312,7 +312,7 @@ footer svg:hover {
 .accordionCard {
   margin: 1em 0;
   color: antiquewhite;
-  height: 150px;
+  height: 200px;
   align-content: center;
   cursor: pointer;
 }
@@ -579,9 +579,9 @@ strong {
     width: 1200px;
     height: 200px;
     position: absolute;
-    left: 2%;
-    top: -27%;
-    font-size: 5em;
+    left: 3%;
+    top: 15%;
+    font-size: 9em;
     font-weight: bold;
     transform: scale(.89);
   }
@@ -687,14 +687,15 @@ strong {
 
 
 .accordionCard {
-  margin: 1.2em .5em;
-  height: 200px;
+  margin: 1.2em .7em;
+  height: 250px;
   width: 250px;
   align-content: flex-start;
 }
 
 .accordionCard div {
   padding: 2em ;
+  margin: 0 .4em;
 }
 
 
@@ -758,4 +759,15 @@ ul li {
 #WhyChooseUs {
   padding: 4em 7em;
 }
+
+.container img {
+  max-width: 1440px;
+}
+
+.navegation-tab {
+  padding: 3em 5em !important;
+}
+
+
+
 }

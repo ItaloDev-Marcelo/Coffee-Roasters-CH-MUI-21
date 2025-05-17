@@ -6,7 +6,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import imagesBank from '../components/ImagesBank';
 export default function Footer() {
 
-   const {LogoWhite} = imagesBank;
+   const {LogoW} = imagesBank;
    
        
 
@@ -15,7 +15,7 @@ export default function Footer() {
         <Stack component='footer' sx={{display: 'flex', flexDirection: {xs: 'column', lg: 'row'},
        justifyContent: {xs: 'center', lg: 'space-around'}, background: '#2c353e', padding: ' 1.7em 2em'}} >
          <Stack id='logo' alignSelf={{xs: 'center', lg: 'flex-start'}}>
-            <img src={LogoWhite} alt='logo' width='200px' />
+            <img src={LogoW} alt='logo' width='200px' />
          </Stack>
          <Stack id='list' sx={{color: '#fff', position: 'relative', top: {xs: '-3em', lg: '.2em'}} }>
             <ul id='menu-list'>

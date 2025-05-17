@@ -10,8 +10,8 @@ export default function HowItWorks() {
         sx={{display: 'flex', flexDirection: 'column',
           justifyContent: {xs: 'center', md: 'flex-start'},
            textAlign: {xs: 'center', md: 'left'}, alignItems: {xs: 'center', md: 'flex-start'},
-         
         }}
+        
         textAlign={{xs: 'center', md: 'left'}} >
             <Typography variant='h4' margin={{md: '1em 1.5em 3em 1.5em'}}>How it works</Typography>
             

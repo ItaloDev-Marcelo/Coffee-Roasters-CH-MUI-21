@@ -12,7 +12,7 @@ export default function WhyCard() {
                         <Card className='card from-top' key={index}>
                              <Stack>
                                   <img src={item.icon}
-                               alt={item.title} width='75' style={{marginTop: '-2em'}} />
+                               alt={item.title} width='75' style={{marginTop: '2em'}} />
                              </Stack>
                              <CardContent className='content'>
                                  <Typography variant='h3' margin='0 0 .5em 0'>{item.title}</Typography>
